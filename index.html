@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>internet calculator</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>Welcome to the Internet calculator</h1>
+    <h2>Let's see what is the average use for you for the rest of the month</h2>
+    <h3 id="num">0</h3>
+    <h4>GB</h4>
+
+    <form>
+      <p>when your Internet package subscription will end</p>
+      <!-- today -->
+      start date
+      <input type="date" id="startDate" required pattern="\d{4}-\d{2}-\d{2}" />
+      <br />
+      <br />
+      end date
+      <input type="date" id="endDate" required pattern="\d{4}-\d{2}-\d{2}" />
+      <p>how much GB still in the current subscription</p>
+      <input type="number" id="GigaB" value="45" />
+    </form>
+    <button>Calculate</button>
+
+    <script>
+      // Today function (Still Not working)
+      // var today = new Date();
+      // let myDate1 = today.toLocaleDateString();
+      // myDate1 = myDate1.split("/");
+      // var date1 = new Date(myDate1[1], myDate1[0] - 1, myDate1[2]);
+      // console.log(date1.getTime());
+      // let date1 = new Date("08/16/2021");
+      // let date2 = new Date("09/03/2021");
+      var btnGet = document.querySelector("button");
+      var result = document.querySelector("h3");
+
+      btnGet.addEventListener("click", () => {
+        var myDate1 = document.getElementById("startDate").value;
+        myDate1 = myDate1.split("-");
+        var date1 = new Date(myDate1[0], myDate1[1] - 1, myDate1[2]);
+        console.log(date1.getTime());
+
+        var myDate2 = document.getElementById("endDate").value;
+        myDate2 = myDate2.split("-");
+        var date2 = new Date(myDate2[0], myDate2[1] - 1, myDate2[2]);
+        console.log(date2.getTime());
+
+        var diff = date2.getTime() - date1.getTime();
+
+        var msinday = 1000 * 60 * 60 * 24;
+
+        var difference = diff / msinday;
+        var GB = parseInt(document.getElementById("GigaB").value);
+        var theAverage = GB / difference;
+        document.getElementById("num").innerHTML = theAverage;
+      });
+    </script>
+  </body>
+</html>
+
+<!-- the GigaBytes / the distance between current date and the ending one -->
