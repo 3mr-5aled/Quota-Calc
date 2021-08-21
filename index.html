@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>internet calculator</title>
+    <title>Quota calculator</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <style>
       * {
         -webkit-box-sizing: border-box;
@@ -33,6 +34,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
       .top {
         color: white;
@@ -93,12 +97,14 @@
         font-weight: bold;
         font-size: larger;
       }
-      body > button:nth-child(5) {
+      body > button:nth-child(6) {
         display: none;
       }
     </style>
   </head>
   <body>
+    <img src="favicon.png" alt="webpage icon" width="150" height="150" />
+
     <div class="container flex top">
       <h1>Welcome to the Internet calculator</h1>
       <h2>
@@ -130,7 +136,7 @@
         max="2050-13-13"
         required
       />
-      <p>how much GB still in the current subscription</p>
+      <p>Enter the Quota of your subscription</p>
       <input type="number" id="GigaB" placeholder="Write the number" required />
     </form>
     <button type="submit">Calculate</button>
@@ -171,14 +177,15 @@
         // the GigaBytes / the distance between current date and the ending one
 
         var theAverage = GB / difference;
+        average = theAverage.toFixed(2);
         var num = document.getElementById("num");
-        num.innerHTML = theAverage;
+        num.innerHTML = average;
 
         // organizing displays
         document.querySelector("form").style.display = "none";
-        document.querySelector("body > button:nth-child(3)").style.display =
+        document.querySelector("body > button:nth-child(4)").style.display =
           "none";
-        document.querySelector("body > button:nth-child(5)").style.display =
+        document.querySelector("body > button:nth-child(6)").style.display =
           "block";
         document.querySelector("h4").style.display = "block";
         document.querySelector("h3").style.display = "block";
