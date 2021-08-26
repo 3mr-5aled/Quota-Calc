@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            background-color: black;
+            color: white;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            /* float: center; */
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-width: 300px;
+            border-color: purple transparent transparent purple;
+            border-style: solid;
+            z-index: -1;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Left and right column */
+        .column.side {
+            width: 60%;
+            text-align: center;
+            line-height: 100px;
+
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 40%;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding: 40px 40px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .formStyle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 35px;
+            background-color: purple;
+            border-radius: 25px;
+            max-width: fit-content;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="/favicon.png" alt="Logo" width="40px" height="40px" style="padding:2.5px;">
+        <a href=" #">Calc</a>
+        <a href="#">WE</a>
+        <a href="#">Vodafone</a>
+        <a href="#">Eiteslat</a>
+        <a href="#">Orange</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h1>Welcome to the Internet calculator</h1>
+            <h2>
+                Let's see what is the average use for you for the rest of the month
+            </h2>
+            <h3 id="num">0</h3>
+            <h4>GB</h4>
+        </div>
+        <div class="column middle formStyle">
+            <form>
+                <p>Enter the dates of your subscription</p>
+                <!-- today -->
+                <span> Start date </span>
+                <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2021-01-01" max="2050-13-13"
+                    required />
+                <br />
+                <br />
+                <span> End date </span>
+                <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2021-01-01" max="2050-13-13"
+                    required />
+                <p>Enter the Quota of your subscription</p>
+                <input type="number" id="GigaB" placeholder="Write the number" required />
+            </form>
+            <button type="submit">Calculate</button>
+            <br />
+            <button onClick="window.location.reload();">Back To calc</button>
+        </div>
+    </div>
+    <script>
+        // Today function (Still Not working)
+        // var today = new Date();
+        // let myDate1 = today.toLocaleDateString();
+        // myDate1 = myDate1.split("/");
+        // var date1 = new Date(myDate1[1], myDate1[0] - 1, myDate1[2]);
+        // console.log(date1.getTime());
+        // let date1 = new Date("08/16/2021");
+        // let date2 = new Date("09/03/2021");
+        var btnGet = document.querySelector("button");
+        var result = document.querySelector("h3");
+
+        btnGet.addEventListener("click", () => {
+            var myDate1 = document.getElementById("startDate").value;
+            myDate1 = myDate1.split("-");
+            var date1 = new Date(myDate1[0], myDate1[1] - 1, myDate1[2]);
+            console.log(date1.getTime());
+
+            var myDate2 = document.getElementById("endDate").value;
+            myDate2 = myDate2.split("-");
+            var date2 = new Date(myDate2[0], myDate2[1] - 1, myDate2[2]);
+            console.log(date2.getTime());
+
+            var diff = date2.getTime() - date1.getTime();
+
+            var msinday = 1000 * 60 * 60 * 24;
+
+            var difference = diff / msinday;
+
+            var GB = parseInt(document.getElementById("GigaB").value);
+
+            // the GigaBytes / the distance between current date and the ending one
+
+            var theAverage = GB / difference;
+            average = theAverage.toFixed(2);
+            var num = document.getElementById("num");
+            num.innerHTML = average;
+
+            // organizing displays
+            document.querySelector("form").style.display = "none";
+            document.querySelector("body > button:nth-child(4)").style.display =
+                "none";
+            document.querySelector("body > button:nth-child(6)").style.display =
+                "block";
+            document.querySelector("h4").style.display = "block";
+            document.querySelector("h3").style.display = "block";
+
+            // NAN Solution
+
+            // var nan = document.querySelector("h3");
+            // if (isNaN(num)) {
+            //   num.innerHTML = "Go Back and enter the dates and the numbers";
+            //   num.style.fontSize = "xx-large";
+            // }
+        });
+    </script>
+</body>
+
+</html>
