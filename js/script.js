@@ -43,11 +43,20 @@
         document.querySelector("h4").style.display = "block";
         document.querySelector("h3").style.display = "block";
         document.getElementById("btc2").style.display = "block";
+
         // NAN Solution
 
-        // var nan = document.querySelector("h3");
+        // 🐞bug : it runs even if all required data is entered
+
         // if (isNaN(num)) {
-        //   num.innerHTML = "Go Back and enter the dates and the numbers";
-        //   num.style.fontSize = "xx-large";
+        //   document.write("<div><h1>❗❗ Make sure you have entered all required data ❗❗</h1><button onClick=window.location.reload()>Back To calc</button></div>")
+        //   document.querySelector("body").style = "background:linear-gradient(180deg,rgb(50,1,65),rgb(184,0,190,1));color:white;justify-content:center;display:flex;text-align:center;align-items:center;flex-wrap:wrap;";
+        //   document.querySelector("button").style= "margin:10px;font-size:24px;color:white;background:transparent;border:5px solid rgb(204, 0, 204);border-radius: 5px;";
+        //   document.querySelector("button").onmouseover = function() {
+        //             this.style= "background-color: rgb(50,1,65);border: 5px solid rgb(50,1,65);margin:10px;font-size:24px;color:white;border-radius: 5px;";
+        //         }
+        // document.querySelector("button").onmouseout = function() {
+        //     this.style= "margin:10px;font-size:24px;color:white;background:transparent;border:5px solid rgb(204, 0, 204);border-radius: 5px;";
+        // }
         // }
     });
