@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(180deg, rgb(50, 1, 65) 0%, rgb(184, 0, 190, 1) 68%);
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: fit-content;
+}
+
+/* Style the topnav links */
+.topnav a {
+    /* float: center; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+li {
+    font-family: cursive;
+    font-weight: bold;
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.threeQuotas {
+    padding: 20px !important;
+}
+
+.quotas {
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    content: '';
+    height: 339px;
+    width: 712px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "logo quota average"
+        "logo quota-num average-num"
+        "logo quota-num average-num";
+    z-index: -5;
+    position: relative;
+    margin: 20px;
+}
+
+.average {
+    grid-area: average;
+    z-index: 2;
+    color: white;
+}
+
+.average>h2 {
+    position: absolute;
+    width: 154px;
+    height: 48px;
+    left: 470px;
+    top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.quota {
+    grid-area: quota;
+    z-index: 2;
+    color: white;
+}
+
+.quota>h2 {
+    position: absolute;
+    width: 154px;
+    height: 48px;
+    left: 238px;
+    top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.quota-num {
+    grid-area: quota-num;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    width: 172px;
+    height: 206px;
+    border-radius: 25px;
+    text-align: center;
+    left: 70px;
+    top: 20px;
+}
+
+.average::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 185px;
+    top: 25px;
+    background-color: var(--tooltip-color);
+    border-radius: 25px;
+    z-index: -2;
+}
+
+.average-num {
+    grid-area: average-num;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    width: 195px;
+    height: 205px;
+    left: 5px;
+    top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+img {
+    position: absolute;
+    left: 35px;
+    width: var(--image-width);
+    height: var(--image-height);
+    top: 100px;
+}
