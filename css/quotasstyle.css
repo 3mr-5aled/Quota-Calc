@@ -1,5 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body {
     background: linear-gradient(180deg, rgb(50, 1, 65) 0%, rgb(184, 0, 190, 1) 68%);
+    font-family: 'Courier New', Courier, monospace;
 }
 .header {
     background-color: #f1f1f1;
@@ -49,22 +53,21 @@ li {
 }
 
 .quotas {
-    display: grid;
-    justify-content:center;
-    align-items: center;
     padding: 20px;
+    width: 950px;
+    margin: 0 auto;
 }
 
 .container {
     background-color: white;
     content: '';
-    height: 339px;
-    width: 712px;
+    height: 21rem;
+    width: 45rem;
     border-radius: 25px;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 2fr 2fr;
-    gap: 0px 25px;
+    gap: 0 2rem;
     grid-auto-flow: row;
     justify-content: center;
     align-content: center;
@@ -76,7 +79,8 @@ li {
         "logo quota-num average-num";
     z-index: -5;
     position: relative;
-    margin: 20px;
+    margin: 20px auto;
+
 }
 
 .average {
@@ -126,21 +130,21 @@ li {
     background-color: white;
     z-index: 2;
     position: absolute;
-    width: 172px;
-    height: 206px;
+    width: 11rem;
+    height: 13rem;
     border-radius: 25px;
     text-align: center;
-    left: 70px;
-    top: 20px;
+    left: 4rem;
+    top: 1rem;
 }
 
 .average::before {
     content: "";
     position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 185px;
-    top: 25px;
+    width: 32rem;
+    height: 19rem;
+    left: 12rem;
+    top: 1rem;
     background-color: var(--tooltip-color);
     border-radius: 25px;
     z-index: -2;
@@ -151,10 +155,10 @@ li {
     background: white;
     z-index: 2;
     position: absolute;
-    width: 195px;
-    height: 205px;
-    left: 5px;
-    top: 20px;
+    width: 12rem;
+    height: 13rem;
+    left: 0rem;
+    top: 1rem;
     border-radius: 25px;
     text-align: center;
 }
@@ -165,8 +169,8 @@ li {
 
 img {
     position: absolute;
-    left: 35px;
     width: var(--image-width);
     height: var(--image-height);
-    top: 100px;
+    left: 2rem;
+    top: 5rem;
 }

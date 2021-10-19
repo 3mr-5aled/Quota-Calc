@@ -1,18 +1,20 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 :root {
-    --mainColor: rgb(50, 1, 65);
-    --secondaryColor: rgb(184, 0, 190, 1);
+    --purpleColor: #320141;
+    --lightPurpleColor: #B800BE;
+    --cyanColor: #44BBA4;
+    --lightBrownColor: #EBB9DF;
 }
 
 body {
     display: grid;
-    background: linear-gradient(180deg, var(--mainColor) 0%, var(--secondaryColor) 68%);
-    height: 100vh;
+    background: linear-gradient(180deg, var(--purpleColor) 0%, var(--lightPurpleColor) 68%);
+    background-repeat:no-repeat;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Style the header */
@@ -38,11 +40,11 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-    /* float: center; */
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Change color on hover */
@@ -50,16 +52,7 @@ body {
     background-color: #ddd;
     color: black;
 }
-/* .topnav::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-width: 300px;
-    border-color: purple transparent transparent purple;
-    border-style: solid;
-    z-index: -1;
-} */
+
 .row {
     display: flex;
     flex-direction: row;
@@ -145,8 +138,8 @@ button {
     border-radius: 5px;
 }
 button:hover{
-    background-color: var(--mainColor);
-    border: 5px solid var(--mainColor);
+    background-color: var(--purpleColor);
+    border: 5px solid var(--purpleColor);
 }
 @media screen and (min-height: 630px) and ( min-width: 990px) {
     body {
