@@ -29,6 +29,30 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     border: 2px solid var(--lightBrownColor);
   }
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        var(--lightPurpleColor),
+        var(--purpleColor)
+      );
+      /* transform: translate(-1500px,-1500px); */
+      transition: all 5s ease;
+    z-index: 900;
+    animation: up 5s ease;
+  }
+  @keyframes up {
+    to {
+      transform: translateY(-1000px);
+    }
+  }
 /* Style the header */
 .header {
     background-color: #f1f1f1;

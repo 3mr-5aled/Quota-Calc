@@ -52,4 +52,19 @@
         }
     }
     });
-    
+    window.addEventListener("load", function fadeOutEffect() {
+        var fadeTarget = document.querySelector(".loader-wrapper");
+        var fadeEffect = setInterval(function () {
+          if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+          }
+          if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.5;
+          } else {
+            clearInterval(fadeEffect);
+          }
+        }, 300);
+        setInterval(function () {
+          loader.style.display = "none";
+        }, 1500);
+      });
