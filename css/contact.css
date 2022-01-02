@@ -5,9 +5,9 @@
 }
 :root {
   --purpleColor: #320141;
-  --lightPurpleColor: #B800BE;
-  --cyanColor: #44BBA4;
-  --lightBrownColor: #EBB9DF;
+  --lightPurpleColor: #b800be;
+  --cyanColor: #44bba4;
+  --lightBrownColor: #ebb9df;
 }
 body {
   /* background: linear-gradient(90deg, var(--purpleColor) 0%, var(--lightPurpleColor) 100%); */
@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-size: 10px; */
 }
 body::-webkit-scrollbar {
@@ -36,7 +36,8 @@ body::-webkit-scrollbar-thumb {
 .container {
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgb(0 0 0), 0 10px 10px rgb(0 0 0);  position: relative;
+  box-shadow: 0 14px 28px rgb(0 0 0), 0 10px 10px rgb(0 0 0);
+  position: relative;
   overflow: hidden;
   width: 768px;
   max-width: 100%;
@@ -95,7 +96,8 @@ h2 {
   line-height: 22px;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
@@ -104,7 +106,8 @@ input, textarea {
   font-size: 0.8rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 1px solid #00b4cf;
 }
 
@@ -112,7 +115,7 @@ button {
   border-radius: 20px;
   border: 1px solid #00b4cf;
   background-color: #00b4cf;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
@@ -144,10 +147,10 @@ form p {
   text-align: left;
 }
 .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    height: 50px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  height: 50px;
 }
 .topnav {
   overflow: hidden;
@@ -175,4 +178,23 @@ form p {
   background-color: var(--lightPurpleColor);
   color: white;
   border-radius: 10px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+footer p {
+  padding: 2px;
+  margin: 2px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--lightPurpleColor);
+  font-weight: bold;
 }
