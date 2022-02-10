@@ -19,51 +19,53 @@
 </head>
 
 <body>
-    <navigation>
-        <a href="index.html"> <img src="assets/favicon.png" alt="Logo" width="40px" height="40px"></a>
-        <a href="html/Quotas.html">Planned Quota</a>
-        <a href="html/contact.html">Contact & Suggestions</a>
-    </navigation>
+    <header>
+        <navigation>
+            <a href="index.html"> <img src="assets/favicon.png" alt="Logo" width="40px" height="40px"></a>
+            <a href="html/Quotas.html">Planned Quota</a>
+            <a href="html/contact.html">Contact & Suggestions</a>
+        </navigation>
+        <!-- </header>
     <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
-    </div>
-    <div class="row">
-        <div class="column side">
-            <h1>Welcome to the Internet calculator</h1>
-            <h2>
-                Let's see what is the average use for you for the rest of the month
-            </h2>
-            <h3 id="num">0</h3>
-            <h4>GB</h4>
-        </div>
-        <div class="column middle formStyle" style="display:block">
-            <form>
-                <p>Enter the dates of your subscription</p>
-                <!-- today -->
-                <div>
-                    <span> Start date </span>
-                    <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2021-01-01" max="2050-13-13"
-                        required />
-                </div>
-                <br />
-                <div>
-                    <span> End date </span>
-                    <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2021-01-01" max="2050-13-13"
-                        required />
-                </div>
-                <p>Enter the Quota of your subscription</p>
-                <input type="number" id="GigaB" placeholder="Write the number" required />
-            </form>
-            <button id="btc" type="submit">Calculate</button>
-            <button id="btc2" onClick="window.location.reload();">Back To calc</button>
-        </div>
-        <footer>
+    </div> -->
+        <div class="row">
+            <div class="column side">
+                <h1>Welcome to the Internet calculator</h1>
+                <h2>
+                    Let's see what is the average use for you for the rest of the month
+                </h2>
+                <h3 id="num">0</h3>
+                <h4>GB</h4>
+            </div>
+            <div class="column middle formStyle" style="display:block">
+                <form>
+                    <p>Enter the dates of your subscription</p>
+                    <!-- today -->
+                    <div>
+                        <span> Start date </span>
+                        <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2021-01-01" max="2050-13-13"
+                            required />
+                    </div>
+                    <br />
+                    <div>
+                        <span> End date </span>
+                        <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2021-01-01" max="2050-13-13"
+                            required />
+                    </div>
+                    <p>Enter the Quota of your subscription</p>
+                    <input type="number" id="GigaB" placeholder="Write the number" required />
+                </form>
+                <button id="btc" type="submit">Calculate</button>
+                <button id="btc2" onClick="window.location.reload();">Back To calc</button>
+            </div>
+            <footer>
 
-            <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" target="_blank">3mr 5aled</a></p>
-        </footer>
+                <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" target="_blank">3mr 5aled</a></p>
+            </footer>
 
-    </div>
-    <script src="js/script.js"></script>
+        </div>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
