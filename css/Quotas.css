@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;700;800&display=swap");
+
 :root {
   --purpleColor: #320141;
   --lightPurpleColor: #b800be;
@@ -15,7 +17,7 @@ body {
   /* width: 100%; */
 }
 body::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 body::-webkit-scrollbar-track {
   background: var(--lightBrownColor);
@@ -159,7 +161,7 @@ footer a {
 }
 
 li {
-  font-family: cursive;
+  font-family: "Recursive", sans-serif;
   font-weight: bold;
   list-style: none;
   padding: 12px;
