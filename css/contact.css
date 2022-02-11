@@ -60,6 +60,17 @@ navigation a:hover {
 a:nth-child(1):hover {
   background-color: transparent;
 }
+/* make header at bottom in mobile view */
+@media only screen and (max-width: 600px) {
+  navigation {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 /* .contact-box {
   max-width: 400px;
   margin: 0 auto;
@@ -219,6 +230,21 @@ footer {
   text-align: center;
   padding: 1px;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+  }
+}
+
 footer p {
   padding: 2px;
   margin: 2px;

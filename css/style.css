@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 /* Style the top navigation bar */
 navigation {
   background-color: rgba(0, 0, 0, 0.66);
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   /* background: transparent; */
   display: flex;
@@ -68,7 +68,7 @@ navigation {
   flex-wrap: nowrap;
   align-items: center;
   height: fit-content;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 /* Style the topnav links */
@@ -92,6 +92,16 @@ navigation a:hover {
 a:nth-child(1):hover {
   background-color: transparent;
 }
+@media only screen and (max-width: 600px) {
+  navigation {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -118,11 +128,16 @@ a:nth-child(1):hover {
 /* Left and right column */
 .column.side {
   width: 60%;
-  /* height: 80%; */
   margin-top: 6rem;
   text-align: center;
   line-height: 80px;
-  margin: 10;
+  /* margin: 5px; */
+}
+@media screen and (max-width: 600px) {
+  .column.side {
+    width: 85%;
+    margin-top: 4rem;
+  }
 }
 
 /* Middle column */
@@ -132,6 +147,14 @@ a:nth-child(1):hover {
   margin-left: 2rem;
   /* margin-bottom: 5rem; */
   padding: 40px 40px;
+}
+@media screen and (max-width: 600px) {
+  .column.middle {
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+  }
 }
 
 /* Clear floats after the columns */
@@ -168,6 +191,7 @@ form > * {
 }
 
 input {
+  width: 150px;
   border-radius: 5px;
   border: 5px solid var(--purpleColor);
   color: white;
@@ -185,7 +209,7 @@ input {
 @media screen and (max-width: 600px) {
   .column.side,
   .column.middle {
-    width: 100%;
+    width: 20;
     margin-left: 0;
   }
 }
@@ -230,6 +254,21 @@ footer {
   text-align: center;
   padding: 1px;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+  }
+}
+
 footer p {
   padding: 2px;
   margin: 2px;
