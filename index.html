@@ -8,6 +8,8 @@
     <meta name="keywords" content="Internet, We, Vodafone, Orange, Etisalat, Quota">
     <meta name="author" content="Amr Khaled">
     <meta name="image" content="assets/quotaCalcBannerPreview.png">
+    <meta name="description"
+        content="This is a calculator for the quota enter your quota data and know your daily average use should be">
     <meta property="og:url" content="https://quotacalc.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Quota Calc">
@@ -16,6 +18,13 @@
     <meta property="og:image" content="/assets/quotaCalcBannerPreview.png">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json" />
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
 </head>
 
 <body>
@@ -43,15 +52,21 @@
                     <p>Enter the dates of your subscription</p>
                     <!-- today -->
                     <div>
-                        <span> Start date </span>
-                        <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2021-01-01" max="2050-13-13"
-                            required />
+                        <!-- <span> Start date </span> -->
+                        <label for="startdate">
+                            Start date
+                            <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2021-01-01"
+                                max="2050-13-13" required />
+                        </label>
                     </div>
                     <br />
                     <div>
-                        <span> End date </span>
-                        <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2021-01-01" max="2050-13-13"
-                            required />
+                        <!-- <span> End date </span> -->
+                        <label for="endDate">
+                            End date
+                            <input type="date" i="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2021-01-01" max="2050-13-13"
+                                required />
+                        </label>
                     </div>
                     <p>Enter the Quota of your subscription</p>
                     <input type="number" id="GigaB" placeholder="Write the number" required />
@@ -61,7 +76,8 @@
             </div>
             <footer>
 
-                <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" target="_blank">3mr 5aled</a></p>
+                <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
+                        5aled</a></p>
             </footer>
 
         </div>

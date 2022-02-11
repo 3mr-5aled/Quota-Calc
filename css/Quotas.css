@@ -28,50 +28,6 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid var(--lightBrownColor);
 }
 
-/* Style the top navigation bar */
-navigation {
-  background-color: rgba(0, 0, 0, 0.66);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
-  height: fit-content;
-}
-/* Style the topnav links */
-navigation a {
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 15px;
-  height: max-content;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Change color on hover */
-navigation a:hover {
-  background-color: var(--lightPurpleColor);
-  color: white;
-  border-radius: 10px;
-}
-a:nth-child(1):hover {
-  background-color: transparent;
-}
-/* make header at bottom in mobile view */
-@media only screen and (max-width: 600px) {
-  navigation {
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-}
-
 .head {
   font-weight: bold;
   font-size: 1em;
@@ -82,6 +38,8 @@ a:nth-child(1):hover {
   box-shadow: 4px 6px 20px 0px rgb(255 255 255);
   border-radius: 25px;
   padding: 10px;
+  margin-top: 5rem;
+  /* width: 750px; */
   max-width: 750px;
 }
 
@@ -173,39 +131,4 @@ li {
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.8em;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 1px;
-}
-
-@media screen and (max-width: 600px) {
-  footer {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: fit-content;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1px;
-  }
-}
-
-footer p {
-  padding: 2px;
-  margin: 2px;
-}
-footer a {
-  text-decoration: none;
-  color: var(--lightPurpleColor);
-  font-weight: bold;
 }
