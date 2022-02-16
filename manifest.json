@@ -1,14 +1,46 @@
 {
   "background_color": "#ffffff",
-  "description": "This is a calculator for the quota enter your quota data and know your daily average use should be",
   "dir": "ltr",
   "display": "standalone",
   "name": "Quota Calculator",
+  "short_name": "QuotacCalc",
+  "description": "This is a calculator for the quota enter your quota data and know your daily average use should be",
   "orientation": "any",
   "scope": "/",
-  "short_name": "QuotacCalc",
   "start_url": "/",
   "theme_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "calculator",
+      "url": "/",
+      "icons": [
+        {
+          "src": "assets/calculator.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "planned quota",
+      "url": "/html/Quotas.html",
+      "icons": [
+        {
+          "src": "assets/planning.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "url": "/html/contact.html",
+      "icons": [
+        {
+          "src": "assets/telephone.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
   "icons": [
     {
       "src": "images/windows11/SmallTile.scale-100.png",

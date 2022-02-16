@@ -1,4 +1,4 @@
-var btnGet = document.querySelector("button");
+var btnGet = document.getElementById("btc");
 var result = document.querySelector("h3");
 
 document.getElementById("btc2").style.display = "none";
@@ -31,10 +31,15 @@ btnGet.addEventListener("click", () => {
 
   // organizing displays
   document.querySelector("form").style.display = "none";
-  document.querySelector("#btc").style.display = "none";
+  document.getElementById("btc").style.display = "none";
   document.querySelector("h4").style.display = "block";
   document.querySelector("h3").style.display = "block";
   document.getElementById("btc2").style.display = "block";
+
+  // if (window.matchMedia("(max-width: 600px)").matches) {
+  //   document.querySelector("body > header > div").style.flexDirection =
+  //     "column";
+  // }
 
   // NAN Solution
 
@@ -58,6 +63,7 @@ btnGet.addEventListener("click", () => {
     };
   }
 });
+
 // loader func
 
 // window.addEventListener("load", function fadeOutEffect() {
