@@ -11,7 +11,7 @@
   "theme_color": "#320141",
   "shortcuts": [
     {
-      "name": "calculator",
+      "name": "Calculator",
       "url": "/",
       "icons": [
         {
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "name": "planned quota",
+      "name": "Quotas",
       "url": "/html/Quotas.html",
       "icons": [
         {
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "name": "contact",
+      "name": "Contact",
       "url": "/html/contact.html",
       "icons": [
         {
