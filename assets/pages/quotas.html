@@ -19,17 +19,40 @@
     <title>Quotas</title>
     <link rel="stylesheet" href="../css/Quotas.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../assets/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="../images/images/favicon.png" type="image/png" />
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
 </head>
 
 <body>
-    <header>
-        <navigation>
-            <a href="../index"> <img src="../assets/favicon.png" alt="Logo" width="40px" height="40px"></a>
-            <a href="../pages/Quotas">Quotas</a>
-            <a href="../pages/contact">Contact</a>
-        </navigation>
-    </header>
+    <div include="../pages/header.html"></div>
 
     <div class="head">
         <h2 style="text-align: center;">Here are some calculated quotas from <br> the biggest internet companys in
@@ -39,7 +62,8 @@
     <!-- We -->
     <div class="quota">
         <div class="image">
-            <img class="company-img" src="../assets/we.png" alt="we" style="--image-width: 100px; --image-height:150px">
+            <img class="company-img" src="../images/images/we.png" alt="we"
+                style="--image-width: 100px; --image-height:150px">
         </div>
         <div class="quota-list" style="--tooltip-color: #BD00FF;">
             <h1>Quota</h1>
@@ -63,7 +87,7 @@
     <!-- Vodafone -->
     <div class="quota">
         <div class="image">
-            <img class="company-img" src="../assets/vodafone.png" alt="vodafone"
+            <img class="company-img" src="../images/images/vodafone.png" alt="vodafone"
                 style="--image-width: 110px; --image-height:140px">
         </div>
         <div class="quota-list" style="--tooltip-color: red;">
@@ -88,7 +112,7 @@
     <!-- Etisalat -->
     <div class="quota">
         <div class="image">
-            <img class="company-img" src="../assets/etisalat.png" alt="etisalat"
+            <img class="company-img" src="../images/images/etisalat.png" alt="etisalat"
                 style="--image-width: 100px; --image-height:150px">
         </div>
         <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
@@ -113,7 +137,7 @@
     <!-- Orange -->
     <div class="quota">
         <div class="image">
-            <img class="company-img" src="../assets/orange.png" alt="Orange"
+            <img class="company-img" src="../images/images/orange.png" alt="Orange"
                 style="--image-width: 120px; --image-height:120px">
         </div>
         <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
@@ -138,7 +162,7 @@
     <!-- noor -->
     <div class="quota">
         <div class="image">
-            <img class="company-img" src="../assets/noor.png" alt="noor"
+            <img class="company-img" src="../images/images/noor.png" alt="noor"
                 style="--image-width: 120px; --image-height:120px">
         </div>
         <div class="quota-list" style="--tooltip-color: cyan;">
@@ -161,9 +185,10 @@
         </div>
     </div>
 
-    <footer>
-        <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" target="_blank">3mr 5aled</a></p>
-    </footer>
+    <div include="../../assets/pages/footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

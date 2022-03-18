@@ -25,63 +25,84 @@
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
     </script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
 </head>
 
 <body>
-    <header>
-        <navigation>
-            <a href="index"> <img src="assets/favicon.png" alt="Logo" width="40px" height="40px"></a>
-            <a href="pages/Quotas">Quotas</a>
-            <a href="pages/contact">Contact</a>
-        </navigation>
-        <!-- </header>
-    <div class="loader-wrapper">
+    <div include="assets/pages/header.html"></div>
+    <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
     </div> -->
-        <div class="row">
-            <div class="column side">
-                <h1>Welcome to the Internet calculator</h1>
-                <h2>
-                    Let's see what is the average use for you for the rest of the month
-                </h2>
-                <h3 id="num">0</h3>
-                <h4>GB</h4>
-            </div>
-            <div class="column middle formStyle" style="display:block">
-                <form>
-                    <p>Enter the dates of your subscription</p>
-                    <!-- today -->
-                    <div>
-                        <span> Start date </span>
-                        <!-- <label for="startdate"> -->
-                        <!-- Start date -->
-                        <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13"
-                            required />
-                        <!-- </label> -->
-                    </div>
-                    <br />
-                    <div>
-                        <span> End date </span>
-                        <!-- <label for="endDate">
-                                End date -->
-                        <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13"
-                            required />
-                        <!-- </label> -->
-                    </div>
-                    <p>Enter the Quota of your subscription</p>
-                    <input type="number" id="GigaB" placeholder="Write the number" required />
-                </form>
-                <button id="btc">Calculate</button>
-                <button id="btc2" onClick="window.location.reload();">Back To calc</button>
-            </div>
-            <footer>
-
-                <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
-                        5aled</a></p>
-            </footer>
-
+    <div class="row">
+        <div class="column side">
+            <h1>Welcome to the Internet calculator</h1>
+            <h2>
+                Let's see what is the average use for you for the rest of the month
+            </h2>
+            <h3 id="num">0</h3>
+            <h4>GB</h4>
         </div>
-        <script src="js/script.js"></script>
+        <div class="column middle formStyle" style="display:block">
+            <form>
+                <p>Enter the dates of your subscription</p>
+                <!-- today -->
+                <div>
+                    <span> Start date </span>
+                    <!-- <label for="startdate"> -->
+                    <!-- Start date -->
+                    <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13"
+                        required />
+                    <!-- </label> -->
+                </div>
+                <br />
+                <div>
+                    <span> End date </span>
+                    <!-- <label for="endDate">
+                                End date -->
+                    <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13"
+                        required />
+                    <!-- </label> -->
+                </div>
+                <p>Enter the Quota of your subscription</p>
+                <input type="number" id="GigaB" placeholder="Write the number" required />
+            </form>
+            <button id="btc">Calculate</button>
+            <button id="btc2" onClick="window.location.reload();">Back To calc</button>
+        </div>
+        <div include="assets/pages/footer.html"></div>
+    </div>
+    <script>
+        includeHTML();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
