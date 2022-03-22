@@ -25,12 +25,16 @@
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
     </script>
-    <script src="assets/js/includehtmlfun.js">
-    </script>
 </head>
 
 <body>
-    <div include="assets/pages/header.html"></div>
+    <header>
+        <navigation>
+            <a href="index"> <img src="/assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
+            <a href="assets/pages/quotas">Quotas</a>
+            <a href="assets/pages/contact">Contact</a>
+        </navigation>
+    </header>
     <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
     </div> -->
@@ -70,11 +74,11 @@
             <button id="btc">Calculate</button>
             <button id="btc2" onClick="window.location.reload();">Back To calc</button>
         </div>
-        <div include="assets/pages/footer.html"></div>
+        <footer>
+            <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
+                    5aled</a></p>
+        </footer>
     </div>
-    <script>
-        includeHTML();
-    </script>
     <script src="assets/js/script.js"></script>
 </body>
 
