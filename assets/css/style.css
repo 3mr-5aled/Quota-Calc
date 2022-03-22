@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
 /* Left and right column */
 .column.side {
   width: 60%;
-  margin-top: 6rem;
+  margin-top: 5rem;
   text-align: center;
   line-height: 80px;
   /* margin: 5px; */
