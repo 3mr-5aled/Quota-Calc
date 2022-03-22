@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body > div:nth-child(7) {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 820px) {
   .quota {
