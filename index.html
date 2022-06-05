@@ -4,7 +4,7 @@
 <head>
     <title>Quota Calc</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1" />
     <meta name="keywords" content="Internet, We, Vodafone, Orange, Etisalat, Quota">
     <meta name="author" content="Amr Khaled">
     <meta name="image" content="assets/images/images/quotaCalcBannerPreview.png">
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets\images\ios\512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
@@ -30,7 +32,7 @@
 <body>
     <header>
         <navigation>
-            <a href="index"> <img src="/assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
+            <a href="index"> <img src="assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
             <a href="assets/pages/quotas">Quotas</a>
             <a href="assets/pages/contact">Contact</a>
         </navigation>
@@ -38,16 +40,18 @@
     <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
     </div> -->
-    <div class="row">
-        <div class="column side">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <div class="mainDiv">
+        <div class="column left">
             <h1>Welcome to the Internet calculator</h1>
             <h2>
                 Let's see what is the average use for you for the rest of the month
             </h2>
             <h3 id="num">0</h3>
             <h4>GB</h4>
+            <button type="button" id="bth" onClick="window.location.reload();">Back To calc</button>
         </div>
-        <div class="column middle formStyle" style="display:block">
+        <div class="column right formStyle">
             <form>
                 <p>Enter the dates of your subscription</p>
                 <!-- today -->
@@ -55,24 +59,23 @@
                     <span> Start date </span>
                     <!-- <label for="startdate"> -->
                     <!-- Start date -->
-                    <input type="date" id="startDate" pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13"
-                        required />
+                    <input label="Start date" placeholder="Start date" type="date" id="startDate"
+                        pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13" required />
                     <!-- </label> -->
                 </div>
                 <br />
                 <div>
                     <span> End date </span>
                     <!-- <label for="endDate">
-                                End date -->
-                    <input type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13"
-                        required />
+                        End date -->
+                    <input label="End date" placeholder="End date" type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}"
+                        min="2022-01-01" max="2050-13-13" required />
                     <!-- </label> -->
                 </div>
                 <p>Enter the Quota of your subscription</p>
                 <input type="number" id="GigaB" placeholder="Write the number" required />
             </form>
-            <button id="btc">Calculate</button>
-            <button id="btc2" onClick="window.location.reload();">Back To calc</button>
+            <button type="submit" id="btc">Calculate</button>
         </div>
         <footer>
             <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
