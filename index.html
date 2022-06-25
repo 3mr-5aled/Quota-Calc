@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="assets/images/images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="assets/css/Quotas.css"> -->
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="assets\images\ios\512.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,53 +42,189 @@
 </head>
 
 <body>
-    <header>
-        <navigation>
-            <a href="index"> <img src="assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
-            <a href="assets/pages/quotas">Quotas</a>
-            <a href="assets/pages/videoQuality">Video calc</a>
-            <a href="assets/pages/contact">Contact</a>
-        </navigation>
-    </header>
+    <!-- <header> -->
+    <navigation>
+        <a href="index"> <img src="assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
+        <!-- <a href="assets/pages/quotas">Quotas</a> -->
+        <a href="assets/pages/videoQuality">Video calc</a>
+        <a href="assets/pages/contact">Contact</a>
+    </navigation>
+    <!-- </header> -->
     <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
     </div> -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="mainDiv">
-        <div class="column left">
-            <h1>Welcome to the Internet calculator</h1>
-            <h2>
-                Let's see what is the average use for you for the rest of the month
-            </h2>
-            <h3 id="num">0</h3>
-            <h4>GB</h4>
-            <button type="button" id="bth" onClick="window.location.reload();">Back To calc</button>
-        </div>
-        <div class="column right formStyle">
-            <form>
-                <p>Enter the dates of your subscription</p>
-                <!-- today -->
-                <div>
-                    <span> Start date </span>
-                    <!-- <label for="startdate"> -->
-                    <!-- Start date -->
-                    <input label="Start date" placeholder="Start date" type="date" id="startDate"
-                        pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13" required />
-                    <!-- </label> -->
-                </div>
-                <br />
-                <div>
-                    <span> End date </span>
-                    <!-- <label for="endDate">
+        <div class="calcBox">
+            <div class="column left">
+                <h1>Welcome to the Internet calculator</h1>
+                <h2>
+                    Let's see what is the average use for you for the rest of the month
+                </h2>
+                <h3 id="num">0</h3>
+                <h4>GB</h4>
+                <button type="button" id="bth" onClick="window.location.reload();">Back To calc</button>
+            </div>
+            <div class="column right formStyle">
+                <form>
+                    <p>Enter the dates of your subscription</p>
+                    <!-- today -->
+                    <div>
+                        <span> Start date </span>
+                        <!-- <label for="startdate"> -->
+                        <!-- Start date -->
+                        <input label="Start date" placeholder="Start date" type="date" id="startDate"
+                            pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13" required />
+                        <!-- </label> -->
+                    </div>
+                    <br />
+                    <div>
+                        <span> End date </span>
+                        <!-- <label for="endDate">
                         End date -->
-                    <input label="End date" placeholder="End date" type="date" id="endDate" pattern="\d{4}-\d{2}-\d{2}"
-                        min="2022-01-01" max="2050-13-13" required />
-                    <!-- </label> -->
+                        <input label="End date" placeholder="End date" type="date" id="endDate"
+                            pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13" required />
+                        <!-- </label> -->
+                    </div>
+                    <p>Enter the Quota of your subscription</p>
+                    <input type="number" id="GigaB" placeholder="Write the number" required />
+                </form>
+                <button type="submit" id="btc">Calculate</button>
+            </div>
+        </div>
+        <div class="quotalists">
+            <div class="head">
+                <h2 style="text-align: center;">Here are some calculated quotas from <br> the biggest internet companys
+                    in
+                    Egypt.
+                </h2>
+            </div>
+            <!-- We -->
+            <div class="quota">
+                <div class="image">
+                    <img class="company-img" src="/assets/images/images/we.png" alt="we"
+                        style="--image-width: 100px; --image-height:150px">
                 </div>
-                <p>Enter the Quota of your subscription</p>
-                <input type="number" id="GigaB" placeholder="Write the number" required />
-            </form>
-            <button type="submit" id="btc">Calculate</button>
+                <div class="quota-list" style="--tooltip-color: #BD00FF;">
+                    <h1>Quota</h1>
+                    <ul class="list">
+                        <li>140gb</li>
+                        <li>250gb</li>
+                        <li>400gb</li>
+                        <li>600gb</li>
+                    </ul>
+                </div>
+                <div class="quota-list" style="--tooltip-color: #BD00FF;">
+                    <h1>Daily Average</h1>
+                    <ul class="list">
+                        <li>4.6 GB/day</li>
+                        <li>8.3 GB/day</li>
+                        <li>13.3 GB/day</li>
+                        <li>20 GB/day</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Vodafone -->
+            <div class="quota">
+                <div class="image">
+                    <img class="company-img" src="/assets/images/images/vodafone.png" alt="vodafone"
+                        style="--image-width: 110px; --image-height:140px">
+                </div>
+                <div class="quota-list" style="--tooltip-color: red;">
+                    <h1>Quota</h1>
+                    <ul class=" list">
+                        <li>140gb</li>
+                        <li>250gb</li>
+                        <li>400gb</li>
+                        <li>600gb</li>
+                    </ul>
+                </div>
+                <div class="quota-list" style="--tooltip-color: red;">
+                    <h1>Daily Average</h1>
+                    <ul class=" list">
+                        <li>4.6 GB/day</li>
+                        <li>8.3 GB/day</li>
+                        <li>13.3 GB/day</li>
+                        <li>20 GB/day</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Etisalat -->
+            <div class="quota">
+                <div class="image">
+                    <img class="company-img" src="/assets/images/images/etisalat.png" alt="etisalat"
+                        style="--image-width: 100px; --image-height:150px">
+                </div>
+                <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
+                    <h1>Quota</h1>
+                    <ul class="list">
+                        <li>140gb</li>
+                        <li>250gb</li>
+                        <li>400gb</li>
+                        <li>600gb</li>
+                    </ul>
+                </div>
+                <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
+                    <h1>Daily Average</h1>
+                    <ul class="list">
+                        <li>4.6 GB/day</li>
+                        <li>8.3 GB/day</li>
+                        <li>13.3 GB/day</li>
+                        <li>20 GB/day</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Orange -->
+            <div class="quota">
+                <div class="image">
+                    <img class="company-img" src="/assets/images/images/orange.png" alt="Orange"
+                        style="--image-width: 120px; --image-height:120px">
+                </div>
+                <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
+                    <h1>Quota</h1>
+                    <ul class="list">
+                        <li>140gb</li>
+                        <li>250gb</li>
+                        <li>400gb</li>
+                        <li>600gb</li>
+                    </ul>
+                </div>
+                <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
+                    <h1>Daily Average</h1>
+                    <ul class="list">
+                        <li>4.6 GB/day</li>
+                        <li>8.3 GB/day</li>
+                        <li>13.3 GB/day</li>
+                        <li>20 GB/day</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- noor -->
+            <div class="quota">
+                <div class="image">
+                    <img class="company-img" src="/assets/images/images/noor.png" alt="noor"
+                        style="--image-width: 120px; --image-height:120px">
+                </div>
+                <div class="quota-list" style="--tooltip-color: cyan;">
+                    <h1>Quota</h1>
+                    <ul class="list">
+                        <li>140gb</li>
+                        <li>250gb</li>
+                        <li>400gb</li>
+                        <li>600gb</li>
+                    </ul>
+                </div>
+                <div class="quota-list" style="--tooltip-color: cyan;">
+                    <h1>Daily Average</h1>
+                    <ul class="list">
+                        <li>4.6 GB/day</li>
+                        <li>8.3 GB/day</li>
+                        <li>13.3 GB/day</li>
+                        <li>20 GB/day</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
         <footer>
             <p>V1.0 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
