@@ -243,7 +243,7 @@ button:hover {
 .head {
   font-weight: bold;
   font-size: 1em;
-  margin: 10px 10px 0;
+  margin: 10px auto 0;
   color: #bd00ff;
   background-color: rgb(255 255 255);
   box-shadow: 4px 6px 20px 0px rgb(255 255 255 / 17%);
@@ -252,6 +252,11 @@ button:hover {
   margin-top: 2rem;
   min-width: 20rem;
   max-width: 50rem;
+}
+@media screen and (max-width: 600px) {
+  .head {
+    margin: 20px 15px 0;
+  }
 }
 
 /* @media screen and (max-width: 600px) {
