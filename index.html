@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- <link rel="stylesheet" href="assets/css/Quotas.css"> -->
     <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="assets\images\ios\512.png">
+    <link rel="apple-touch-icon" href="assets\images\ios\512.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
@@ -38,17 +38,30 @@
 
         gtag('config', 'G-XX2Y502FJF');
     </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Quota Calc",
+          "url": "https://quotacalc.netlify.app/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
     <meta name="google-site-verification" content="DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU" />
 </head>
 
 <body>
     <!-- <header> -->
-    <navigation>
+    <header>
         <a href="index"> <img src="assets/images/images/favicon.png" alt="Logo" width="40px" height="40px"></a>
         <!-- <a href="assets/pages/quotas">Quotas</a> -->
         <a href="assets/pages/videoQuality">Video calc</a>
         <a href="assets/pages/contact">Contact</a>
-    </navigation>
+    </header>
     <!-- </header> -->
     <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">

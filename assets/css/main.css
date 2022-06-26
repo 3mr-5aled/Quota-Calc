@@ -38,9 +38,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   border: 2px solid var(--lightBrownColor);
 }
-/* Style the top navigation bar */
+/* Style the top header bar */
 
-navigation {
+header {
   background-color: rgba(0, 0, 0, 0.66);
   position: fixed;
   /* overflow: hidden; */
@@ -57,7 +57,7 @@ navigation {
   z-index: 1000;
 }
 /* Style the nav links */
-navigation a {
+header a {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -68,17 +68,17 @@ navigation a {
 }
 
 /* Change color on hover */
-navigation a:hover {
+header a:hover {
   background-color: var(--lightPurpleColor);
   color: white;
   border-radius: 10px;
 }
 
-body > header > navigation > a:nth-child(1):hover {
+body > header > header > a:nth-child(1):hover {
   background-color: transparent;
 }
 @media only screen and (max-width: 680px) {
-  navigation {
+  header {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: unset;
@@ -86,13 +86,13 @@ body > header > navigation > a:nth-child(1):hover {
     left: 0;
     width: 100vw;
   }
-  body > header > navigation > a:nth-child(1) {
+  body > header > header > a:nth-child(1) {
     order: 2;
   }
-  body > header > navigation > a:nth-child(2) {
+  body > header > header > a:nth-child(2) {
     order: 1;
   }
-  body > header > navigation > a:nth-child(3) {
+  body > header > header > a:nth-child(3) {
     order: 3;
   }
 }
