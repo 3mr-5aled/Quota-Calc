@@ -270,6 +270,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.66);
   border-radius: 25px;
   width: fit-content;
+  width: -moz-fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -294,6 +295,7 @@ body > div:nth-child(7) {
 
 .image {
   width: fit-content;
+  width: -moz-fit-content;
   height: fit-content;
   margin: 20px;
   display: flex;
