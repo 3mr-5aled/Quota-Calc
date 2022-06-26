@@ -84,7 +84,8 @@ body > header > header > a:nth-child(1):hover {
     position: fixed;
     top: unset;
     bottom: 0;
-    left: 0;
+    padding-right: 2rem;
+    left: -0.5rem;
     width: 100vw;
   }
   body > header > a:nth-child(1) {
