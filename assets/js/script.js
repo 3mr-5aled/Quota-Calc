@@ -41,10 +41,11 @@ btnGet.addEventListener("click", () => {
 
   if (isNaN(average)) {
     document.write(
-      "<div><h1>❗❗ Make sure you have entered all required data correctly ❗❗</h1><button onClick=window.location.reload()>Back To calc</button></div>"
+      "<div><h1>❗❗ Make sure you have entered all required data correctly ❗❗</h1></br><h1>❗❗ تأكد من انك ادخلت البيانات المطلوبة ❗❗</h1><button onClick=window.location.reload()>Back To calc ( العودة للحاسبة ) </button></div>"
     );
+
     document.querySelector("body").style =
-      "background:linear-gradient(180deg,rgb(50,1,65),rgb(184,0,190,1));color:white;justify-content:center;display:flex;text-align:center;align-items:center;flex-wrap:wrap;";
+      "background: linear-gradient(rgb(50, 1, 65), rgb(184, 0, 190));color: white;place-content: center;display: flex;text-align: center;justify-content: center;align-items: center;";
     document.querySelector("button").style =
       "margin:10px;font-size:24px;color:white;background:transparent;border:5px solid rgb(204, 0, 204);border-radius: 5px;";
     document.querySelector("button").onmouseover = function () {
