@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
-    <title>Quota Calc</title>
+    <title>حاسبة الباقة</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="assets/images/images/favicon.webp" type="image/png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style-ar.css">
     <!-- <link rel="stylesheet" href="assets/css/Quotas.css"> -->
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="assets\images\ios\512.png" />
@@ -60,8 +61,8 @@
         <a href="assets/pages/videoQuality">Video Calc</a>
         <a href="assets/pages/contact">Contact</a>
     </header>
-    <div class="arabic">
-        <a href="index-ar.html">Arabic</a>
+    <div class="english">
+        <a href="index.html">English</a>
     </div>
     <!-- <div class="loader-wrapper">
         <img src="assets/quotaCalcBannerPreview.webp" alt="Quota Calc">
@@ -70,46 +71,44 @@
     <div class="mainDiv">
         <div class="calcBox">
             <div class="column left">
-                <h1>Welcome to Quota Calc</h1>
+                <h1>اهلا بكم في موقع حاسبة الباقة</h1>
                 <h2>
-                    Let's see what is the average use for you for the rest of the month
+                    هيا بنا لنري متوسط استهلاكك الشهري
                 </h2>
                 <h3 id="num">0</h3>
-                <h4>GB</h4>
-                <button type="button" id="bth" onClick="window.location.reload();">Back To calc</button>
+                <h4>جيجا</h4>
+                <button type="button" id="bth" onClick="window.location.reload();">العودة للحاسبة</button>
             </div>
             <div class="column right formStyle">
                 <form>
-                    <p>Enter the dates of your subscription</p>
+                    <p>ادخل تواريخ الإشتراك</p>
                     <!-- today -->
                     <div>
-                        <span> Start date </span>
+                        <span> تاريخ البدء </span>
                         <!-- <label for="startdate"> -->
                         <!-- Start date -->
-                        <input label="Start date" placeholder="Start date" type="date" id="startDate"
+                        <input label="Start date" placeholder="تاريخ البدء" type="date" id="startDate"
                             pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13" required />
                         <!-- </label> -->
                     </div>
                     <br />
                     <div>
-                        <span> End date </span>
+                        <span> تاريخ الإنتهاء </span>
                         <!-- <label for="endDate">
                         End date -->
-                        <input label="End date" placeholder="End date" type="date" id="endDate"
+                        <input label="End date" placeholder="تاريخ الإنتهاء" type="date" id="endDate"
                             pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13" required />
                         <!-- </label> -->
                     </div>
-                    <p>Enter the Quota of your subscription</p>
-                    <input type="number" id="GigaB" placeholder="Write the number" required />
+                    <p>ادخل عدد الجيجات في الإشتراك</p>
+                    <input type="number" id="GigaB" placeholder="اكتب الرقم" required />
                 </form>
-                <button type="submit" id="btc">Calculate</button>
+                <button type="submit" id="btc">احسب</button>
             </div>
         </div>
         <div class="quotalists">
             <div class="head">
-                <h2 style="text-align: center;">Here are some calculated quotas from <br> the biggest internet companys
-                    in
-                    Egypt.
+                <h2 style="text-align: center;">هما توجد بعض الباقات المحسوبة من <br> أكبر شركات الإنترنت في مصر
                 </h2>
             </div>
             <!-- We -->
@@ -119,21 +118,21 @@
                         style="--image-width: 100px; --image-height:150px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: #BD00FF;">
-                    <h1>Quota</h1>
+                    <h1>الباقة</h1>
                     <ul class="list">
-                        <li>140gb</li>
-                        <li>250gb</li>
-                        <li>400gb</li>
-                        <li>600gb</li>
+                        <li>140 جيجا</li>
+                        <li>250 جيجا</li>
+                        <li>400 جيجا</li>
+                        <li>600 جيجا</li>
                     </ul>
                 </div>
                 <div class="quota-list" style="--tooltip-color: #BD00FF;">
-                    <h1>Daily Average</h1>
+                    <h1>المتوسط اليومي</h1>
                     <ul class="list">
-                        <li>4.6 GB/day</li>
-                        <li>8.3 GB/day</li>
-                        <li>13.3 GB/day</li>
-                        <li>20 GB/day</li>
+                        <li>4.6 جيجا/يوم</li>
+                        <li>8.3 جيجا/يوم</li>
+                        <li>13.3 جيجا/يوم</li>
+                        <li>20 جيجا/يوم</li>
                     </ul>
                 </div>
             </div>
@@ -144,21 +143,21 @@
                         style="--image-width: 110px; --image-height:140px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: red;">
-                    <h1>Quota</h1>
+                    <h1>الباقة</h1>
                     <ul class=" list">
-                        <li>140gb</li>
-                        <li>250gb</li>
-                        <li>400gb</li>
-                        <li>600gb</li>
+                        <li>140 جيجا</li>
+                        <li>250 جيجا</li>
+                        <li>400 جيجا</li>
+                        <li>600 جيجا</li>
                     </ul>
                 </div>
                 <div class="quota-list" style="--tooltip-color: red;">
-                    <h1>Daily Average</h1>
+                    <h1>المتوسط اليومي</h1>
                     <ul class=" list">
-                        <li>4.6 GB/day</li>
-                        <li>8.3 GB/day</li>
-                        <li>13.3 GB/day</li>
-                        <li>20 GB/day</li>
+                        <li>4.6 جيجا/يوم</li>
+                        <li>8.3 جيجا/يوم</li>
+                        <li>13.3 جيجا/يوم</li>
+                        <li>20 جيجا/يوم</li>
                     </ul>
                 </div>
             </div>
@@ -169,21 +168,21 @@
                         style="--image-width: 100px; --image-height:150px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
-                    <h1>Quota</h1>
+                    <h1>الباقة</h1>
                     <ul class="list">
-                        <li>140gb</li>
-                        <li>250gb</li>
-                        <li>400gb</li>
-                        <li>600gb</li>
+                        <li>140جيجا</li>
+                        <li>250جيجا</li>
+                        <li>400جيجا</li>
+                        <li>600جيجا</li>
                     </ul>
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
-                    <h1>Daily Average</h1>
+                    <h1>المتوسط اليومي</h1>
                     <ul class="list">
-                        <li>4.6 GB/day</li>
-                        <li>8.3 GB/day</li>
-                        <li>13.3 GB/day</li>
-                        <li>20 GB/day</li>
+                        <li>4.6 جيجا/يوم</li>
+                        <li>8.3 جيجا/يوم</li>
+                        <li>13.3 جيجا/يوم</li>
+                        <li>20 جيجا/يوم</li>
                     </ul>
                 </div>
             </div>
@@ -194,21 +193,21 @@
                         style="--image-width: 120px; --image-height:120px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
-                    <h1>Quota</h1>
+                    <h1>الباقة</h1>
                     <ul class="list">
-                        <li>140gb</li>
-                        <li>250gb</li>
-                        <li>400gb</li>
-                        <li>600gb</li>
+                        <li>140جيجا</li>
+                        <li>250جيجا</li>
+                        <li>400جيجا</li>
+                        <li>600جيجا</li>
                     </ul>
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
-                    <h1>Daily Average</h1>
+                    <h1>المتوسط اليومي</h1>
                     <ul class="list">
-                        <li>4.6 GB/day</li>
-                        <li>8.3 GB/day</li>
-                        <li>13.3 GB/day</li>
-                        <li>20 GB/day</li>
+                        <li>4.6 جيجا/يوم</li>
+                        <li>8.3 جيجا/يوم</li>
+                        <li>13.3 جيجا/يوم</li>
+                        <li>20 جيجا/يوم</li>
                     </ul>
                 </div>
             </div>
@@ -219,28 +218,28 @@
                         style="--image-width: 120px; --image-height:120px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: cyan;">
-                    <h1>Quota</h1>
+                    <h1>الباقة</h1>
                     <ul class="list">
-                        <li>140gb</li>
-                        <li>250gb</li>
-                        <li>400gb</li>
-                        <li>600gb</li>
+                        <li>140جيجا</li>
+                        <li>250جيجا</li>
+                        <li>400جيجا</li>
+                        <li>600جيجا</li>
                     </ul>
                 </div>
                 <div class="quota-list" style="--tooltip-color: cyan;">
-                    <h1>Daily Average</h1>
+                    <h1>المتوسط اليومي</h1>
                     <ul class="list">
-                        <li>4.6 GB/day</li>
-                        <li>8.3 GB/day</li>
-                        <li>13.3 GB/day</li>
-                        <li>20 GB/day</li>
+                        <li>4.6 جيجا/يوم</li>
+                        <li>8.3 جيجا/يوم</li>
+                        <li>13.3 جيجا/يوم</li>
+                        <li>20 جيجا/يوم</li>
                     </ul>
                 </div>
             </div>
 
         </div>
         <footer>
-            <p>V0.7 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
+            <p>V0.7 - اخترع و أنشء بواسطة <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
                     5aled</a></p>
         </footer>
     </div>

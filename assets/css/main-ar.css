@@ -27,7 +27,6 @@ body {
   justify-content: center;
   margin: 0;
   justify-items: center;
-  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 20px;
@@ -41,45 +40,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid var(--lightBrownColor);
 }
 /* Style the top header bar */
-.arabic {
-  right: 0;
-}
-.english {
-  right: 0;
-}
-.arabic,
-.english {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  margin: 0.8rem;
-  background: #5e5e5e;
-  padding: 15px;
-  border-radius: 25px;
-}
-.arabic > a,
-.english > a {
-  text-decoration: none;
-  color: white;
-}
-.arabic:hover,
-.english:hover {
-  text-decoration: none;
-  color: white;
-  background: #979797;
-}
-@media screen and (max-width: 600px) {
-  .arabic,
-  .english {
-    bottom: 0;
-    top: unset;
-    left: -25px;
-    right: unset;
-    transform: rotate(270deg);
-    margin: 1rem;
-    padding: 10px;
-  }
-}
+
 header {
   background-color: rgba(0, 0, 0, 0.66);
   position: fixed;
