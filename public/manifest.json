@@ -618,7 +618,7 @@
       "url": "../index.html",
       "icons": [
         {
-          "src": "assets/icons/calculator.webp",
+          "src": "assets/icons/calculator.png",
           "sizes": "192x192"
         }
       ]
@@ -628,7 +628,7 @@
       "url": "../src/pages/videoQuality.html",
       "icons": [
         {
-          "src": "assets/icons/video.webp",
+          "src": "assets/icons/video.png",
           "sizes": "192x192"
         }
       ]
@@ -638,7 +638,7 @@
       "url": "../src/pages/contact.html",
       "icons": [
         {
-          "src": "assets/icons/telephone.webp",
+          "src": "assets/icons/telephone.png",
           "sizes": "192x192"
         }
       ]
