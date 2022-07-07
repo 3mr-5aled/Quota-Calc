@@ -18,6 +18,12 @@
       "purpose": "maskable"
     },
     {
+      "src": "assets/icons/monochrome2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any monochrome"
+    },
+    {
       "src": "assets/icons/windows11/SmallTile.scale-100.png",
       "sizes": "71x71",
       "type": "image/png"
