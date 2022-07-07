@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "filePath": "public/assets/icons/favicon.webp",
+      "success": false,
+      "error": {
+        "errno": "ENOTFOUND",
+        "code": "ENOTFOUND",
+        "syscall": "getaddrinfo",
+        "hostname": "http",
+        "host": "http",
+        "port": 443,
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
+      "success": false,
+      "error": {
+        "errno": "ENOTFOUND",
+        "code": "ENOTFOUND",
+        "syscall": "getaddrinfo",
+        "hostname": "http",
+        "host": "http",
+        "port": 443,
+        "methodName": "constructor"
+      }
+    },
+    { "filePath": "next-steps.html", "success": true },
+    { "filePath": "manifest.json", "success": true },
+    { "filePath": "pwabuilder-sw/pwabuilder-sw-register.js", "success": true },
+    { "filePath": "pwabuilder-sw/pwabuilder-sw.js", "success": true }
+  ],
+  "errors": [
+    {
+      "filePath": "public/assets/icons/favicon.webp",
+      "success": false,
+      "error": {
+        "errno": "ENOTFOUND",
+        "code": "ENOTFOUND",
+        "syscall": "getaddrinfo",
+        "hostname": "http",
+        "host": "http",
+        "port": 443,
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
+      "success": false,
+      "error": {
+        "errno": "ENOTFOUND",
+        "code": "ENOTFOUND",
+        "syscall": "getaddrinfo",
+        "hostname": "http",
+        "host": "http",
+        "port": 443,
+        "methodName": "constructor"
+      }
+    }
+  ]
+}
