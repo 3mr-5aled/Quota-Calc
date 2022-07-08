@@ -1,0 +1,33 @@
+/* .right {
+  float: left;
+}
+.left {
+  float: right;
+}
+@media screen and (min-width: 600px) {
+  .calcBox {
+    width: 85%;
+  }
+} */
+header {
+  padding-left: 2rem;
+  left: -1.3rem;
+}
+
+@media screen and (min-width: 600px) {
+  .calcBox {
+    height: 100vh;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -2rem;
+    align-content: center;
+  }
+}
+.column.left {
+  height: 65%;
+  margin-top: 5rem;
+}

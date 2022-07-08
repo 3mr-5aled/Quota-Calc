@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.netlify.quotacalc.twa",
+                     "sha256_cert_fingerprints": ["FE:EF:C7:E7:A7:50:97:3F:57:6C:3C:B6:D6:C6:EF:E2:5E:54:45:51:46:F0:05:76:4E:58:0A:D5:FA:8A:6C:66"] }
+      }
+]

@@ -9,19 +9,35 @@
 
 <url>
   <loc>https://quotacalc.netlify.app/</loc>
-  <lastmod>2022-06-26T17:57:51+00:00</lastmod>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://quotacalc.netlify.app/assets/pages/videoquality</loc>
-  <lastmod>2022-06-26T17:57:51+00:00</lastmod>
+  <loc>https://quotacalc.netlify.app/index-ar</loc>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://quotacalc.netlify.app/assets/pages/contact</loc>
-  <lastmod>2022-06-26T17:57:51+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quotacalc.netlify.app/src/pages/videoquality</loc>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
+<url>
+  <loc>https://quotacalc.netlify.app/src/pages/videoquality-ar</loc>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://quotacalc.netlify.app/src/pages/contact</loc>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://quotacalc.netlify.app/src/pages/contact-ar</loc>
+  <lastmod>2022-07-08T12:36:28+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
 
 
 </urlset>

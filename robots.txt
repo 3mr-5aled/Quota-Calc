@@ -34,4 +34,6 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+
+
 Sitemap: https://quotacalc.netlify.app/sitemap.xml

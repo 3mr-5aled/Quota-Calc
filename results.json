@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "filePath": "assets/images/images/favicon.webp",
+      "filePath": "public/assets/icons/favicon.webp",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",
@@ -14,7 +14,7 @@
       }
     },
     {
-      "filePath": "/assets/images/images/quotaCalcBannerPreview.webp",
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",
@@ -33,7 +33,7 @@
   ],
   "errors": [
     {
-      "filePath": "assets/images/images/favicon.webp",
+      "filePath": "public/assets/icons/favicon.webp",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "filePath": "/assets/images/images/quotaCalcBannerPreview.webp",
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",

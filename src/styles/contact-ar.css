@@ -1,0 +1,14 @@
+@media only screen and (max-width: 680px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    padding-left: 2rem;
+    left: -1.5rem;
+    width: 100vw;
+  }
+}
+.QA li {
+  text-align: right;
+}
