@@ -144,7 +144,7 @@ span {
   padding: 25px;
   margin: 10px;
   width: 250px;
-  height: 50px;
+  min-height: 50px;
   color: #fff;
   font-size: 1.1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -172,6 +172,17 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.QA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 25px;
+}
+.QA li {
+  text-align: left;
 }
 footer {
   position: fixed;
