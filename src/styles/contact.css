@@ -126,6 +126,7 @@ a {
 }
 span {
   padding: 5px;
+  flex-wrap: nowrap;
 }
 .button-container {
   display: flex;
