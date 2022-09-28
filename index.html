@@ -5,24 +5,45 @@
     <title>Quota Calc</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#320141" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="Internet calculator,calculator,Quota Calc,Internet, We, Vodafone, Orange, Etisalat, Quota, حاسبة الباقة,انترنت, ">
     <meta name="author" content="Amr Khaled">
-    <meta name="image" content="public\assets\icons/quotaCalcBannerPreview.webp">
+
+
+    <!-- HTML Meta Tags -->
+    <title>Quota Calc</title>
     <meta name="description"
         content="This is a calculator for the quota enter your quota data and know your daily average use should be">
+
+    <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://quotacalc.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Quota Calc">
     <meta property="og:description"
         content="This is a calculator for the quota enter your quota data and know your daily average use should be">
-    <meta property="og:image" content="public\assets\icons/quotaCalcBannerPreview.webp">
-    <link rel="shortcut icon" href="public\assets\icons\favicon.webp" type="image/png" />
+    <meta property="og:image" content="https://quotacalc.netlify.app/public/assets/icons/quotaCalcBannerPreview.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="quotacalc.netlify.app">
+    <meta property="twitter:url" content="https://quotacalc.netlify.app/">
+    <meta name="twitter:title" content="Quota Calc">
+    <meta name="twitter:description"
+        content="This is a calculator for the quota enter your quota data and know your daily average use should be">
+    <meta name="twitter:image" content="https://quotacalc.netlify.app/public/assets/icons/quotaCalcBannerPreview.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/main.css">
     <!-- <link rel="stylesheet" href="src/styles/Quotas.css"> -->
     <link rel="manifest" href="public/manifest.json">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://quotacalc.netlify.app/">
     <link rel="apple-touch-icon" href="public/assets/icons/ios/512.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module">
@@ -36,7 +57,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-XX2Y502FJF');
     </script>
     <script type="application/ld+json">
@@ -52,20 +72,21 @@
           }
         }
         </script>
+    <script>navigator.serviceWorker.register("sw.js")</script>
     <meta name="google-site-verification" content="DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU" />
 </head>
 
 <body>
     <header>
-        <a href="index"> <img src="public\assets\icons/favicon.webp" alt="Logo" width="50px" height="50px"></a>
-        <a href="src\pages/videoQuality">Video Calc</a>
-        <a href="src\pages/contact">Contact</a>
+        <a href="index.html"> <img src="public/assets/icons/favicon.webp" alt="Logo" width="50px" height="50px"></a>
+        <a href="src/pages/videoQuality.html">Video Calc</a>
+        <a href="src/pages/contact.html">Contact</a>
     </header>
     <div class="arabic">
-        <a href="index-ar">Arabic</a>
+        <a href="index-ar.html">عربي</a>
     </div>
     <!-- <div class="loader-wrapper">
-        <img src="assets/quotaCalcBannerPreview.webp" alt="Quota Calc">
+        <img src="assets/quotaCalcBannerPreview.png" alt="Quota Calc">
     </div> -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="mainDiv">
@@ -88,7 +109,7 @@
                         <!-- <label for="startdate"> -->
                         <!-- Start date -->
                         <input label="Start date" placeholder="Start date" type="date" id="startDate"
-                            pattern="\d{4}-\d{2}-\d{20}" min="2022-01-01" max="2050-13-13" required />
+                            pattern="/d{4}-/d{2}-/d{20}" min="2022-01-01" max="2050-13-13" required />
                         <!-- </label> -->
                     </div>
                     <br />
@@ -97,7 +118,7 @@
                         <!-- <label for="endDate">
                         End date -->
                         <input label="End date" placeholder="End date" type="date" id="endDate"
-                            pattern="\d{4}-\d{2}-\d{2}" min="2022-01-01" max="2050-13-13" required />
+                            pattern="/d{4}-/d{2}-/d{2}" min="2022-01-01" max="2050-13-13" required />
                         <!-- </label> -->
                     </div>
                     <p>Enter the Quota of your subscription</p>
@@ -116,7 +137,7 @@
             <!-- We -->
             <div class="quota">
                 <div class="image">
-                    <img class="company-img" src="public\assets\icons/we.webp" alt="we"
+                    <img class="company-img" src="public/assets/icons/we.webp" alt="we"
                         style="--image-width: 100px; --image-height:150px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: #BD00FF;">
@@ -141,7 +162,7 @@
             <!-- Vodafone -->
             <div class="quota">
                 <div class="image">
-                    <img class="company-img" src="public\assets\icons/vodafone.webp" alt="vodafone"
+                    <img class="company-img" src="public/assets/icons/vodafone.webp" alt="vodafone"
                         style="--image-width: 110px; --image-height:140px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: red;">
@@ -166,7 +187,7 @@
             <!-- Etisalat -->
             <div class="quota">
                 <div class="image">
-                    <img class="company-img" src="public\assets\icons/etisalat.webp" alt="etisalat"
+                    <img class="company-img" src="public/assets/icons/etisalat.webp" alt="etisalat"
                         style="--image-width: 100px; --image-height:150px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
@@ -191,7 +212,7 @@
             <!-- Orange -->
             <div class="quota">
                 <div class="image">
-                    <img class="company-img" src="public\assets\icons/orange.webp" alt="Orange"
+                    <img class="company-img" src="public/assets/icons/orange.webp" alt="Orange"
                         style="--image-width: 120px; --image-height:120px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
@@ -216,7 +237,7 @@
             <!-- noor -->
             <div class="quota">
                 <div class="image">
-                    <img class="company-img" src="public\assets\icons/noor.webp" alt="noor"
+                    <img class="company-img" src="public/assets/icons/noor.webp" alt="noor"
                         style="--image-width: 120px; --image-height:120px">
                 </div>
                 <div class="quota-list" style="--tooltip-color: cyan;">
