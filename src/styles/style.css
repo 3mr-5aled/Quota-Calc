@@ -227,8 +227,8 @@ button:hover {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 25px;
-  right: 30px;
+  bottom: 3.3rem;
+  right: 0.7rem;
   z-index: 99;
   font-size: 18px;
   border: none;

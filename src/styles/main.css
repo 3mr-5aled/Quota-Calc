@@ -73,7 +73,7 @@ body::-webkit-scrollbar-thumb {
   .english {
     bottom: 0;
     top: unset;
-    left: -25px;
+    left: -15px;
     right: unset;
     transform: rotate(270deg);
     margin: 1rem;
@@ -147,6 +147,26 @@ footer {
   color: white;
   text-align: center;
   padding: 1px;
+  height: 1.5rem;
+}
+footer p {
+  padding: 2px;
+  margin: 2px;
+  margin-left: -2rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.footer-link {
+  color: #e45ce8 !important;
+}
+.social-icons {
+  float: right;
+  position: relative;
+  bottom: 1.3rem;
+  right: 1rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -155,20 +175,13 @@ footer {
     left: 0;
     top: 0;
     width: 100vw;
-    height: fit-content;
+    height: 1.5rem;
     background-color: black;
     color: white;
     text-align: center;
     padding: 1px;
   }
-}
-
-footer p {
-  padding: 2px;
-  margin: 2px;
-}
-footer a {
-  text-decoration: none;
-  color: #e45ce8;
-  font-weight: bold;
+  footer p {
+    margin-left: -2rem;
+  }
 }
