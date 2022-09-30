@@ -47,13 +47,16 @@
     <link rel="manifest" href="public/assets/manifest.json" />
     <link rel="apple-touch-icon" href="public/assets/icons/ios/512.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="module">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- TODO -->
+    <!-- <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
-    </script>
+    </script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX2Y502FJF"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX2Y502FJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -74,7 +77,7 @@
           }
         }
         </script>
-    <meta name="google-site-verification" content="DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU" />
+    <meta name="google-site-verification" content="DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU" /> -->
 </head>
 
 <body>
@@ -133,132 +136,206 @@
                 <h2 style="text-align: center;">هما توجد بعض الباقات المحسوبة من <br> أكبر شركات الإنترنت في مصر
                 </h2>
             </div>
-            <!-- We -->
-            <div class="quota">
-                <div class="image">
-                    <img class="company-img" src="public/assets/icons/we.webp" alt="we"
-                        style="--image-width: 100px; --image-height:150px">
+            <div class="quotalists2">
+                <!-- We -->
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img class="company-img" style="--image-width: 100px; --image-height:150px"
+                                src="public/assets/icons/we.webp" alt="We logo">
+                            <span class="company-name2">WE</span>
+                        </div>
+                        <div class="back">
+                            <div class="quota-list" style="--tooltip-color: #BD00FF;">
+                                <span class="company-name">WE</span>
+                                <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                                <div class="list">
+                                    <div>
+                                        140جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        4.6 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        250جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        8.3 جيجا/يوم
+                                    </div>
+                                    <div>400جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        13 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        600جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        20 جيجا/يوم
+                                    </div>
+                                    <a href="https://te.eg/wps/portal/te/Personal/WE-SPACE/"> <button
+                                            class="card-button">الذهاب للموقع</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="quota-list" style="--tooltip-color: #BD00FF;">
-                    <h1>الباقة</h1>
-                    <ul class="list">
-                        <li>140 جيجا</li>
-                        <li>250 جيجا</li>
-                        <li>400 جيجا</li>
-                        <li>600 جيجا</li>
-                    </ul>
+                <!-- Vodafone -->
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img class="company-img" style="--image-width: 110px; --image-height:140px"
+                                src="public/assets/icons/vodafone.webp" alt="Vodafone logo">
+                            <span class="company-name2">Vodafone</span>
+                        </div>
+                        <div class="back">
+                            <div class="quota-list" style="--tooltip-color: #e60000;">
+                                <span class="company-name">Vodafone</span>
+                                <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                                <div class="list">
+                                    <div>
+                                        140جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        4.6 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        200جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        6.6 جيجا/يوم
+                                    </div>
+                                    <div>300جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        10 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        600جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        20 جيجا/يوم
+                                    </div>
+                                    <a href="https://eshop.vodafone.com.eg/shop/Internet-Services/DSL"> <button
+                                            class="card-button">الذهاب للموقع</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="quota-list" style="--tooltip-color: #BD00FF;">
-                    <h1>المتوسط اليومي</h1>
-                    <ul class="list">
-                        <li>4.6 جيجا/يوم</li>
-                        <li>8.3 جيجا/يوم</li>
-                        <li>13.3 جيجا/يوم</li>
-                        <li>20 جيجا/يوم</li>
-                    </ul>
+                <!-- Etisalat -->
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                                src="public/assets/icons/etisalat.webp" alt="Etisalat logo">
+                            <span class="company-name2">Etisalat</span>
+                        </div>
+                        <div class="back">
+                            <div class="quota-list" style="--tooltip-color: #c6a25b;">
+                                <span class="company-name">Etisalat</span>
+                                <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                                <div class="list">
+                                    <div>
+                                        140جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        4.6 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        200جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        6.6 جيجا/يوم
+                                    </div>
+                                    <div>300جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        10 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        600جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        20 جيجا/يوم
+                                    </div>
+                                    <a
+                                        href="https://www.etisalat.eg/StaticFiles/portal/etisalat/pages/plans/mega_monthly.html">
+                                        <button class="card-button">الذهاب للموقع</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Orange -->
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                                src="public/assets/icons/orange.webp" alt="Orange logo">
+                            <span class="company-name2">Orange</span>
+                        </div>
+                        <div class="back">
+                            <div class="quota-list" style="--tooltip-color: #ff6600;">
+                                <span class="company-name">Orange</span>
+                                <h1>الباقة <i class="fa-solid fa-arrow-left"></i>
+                                    المتوسط اليومي</h1>
+                                <div class="list">
+                                    <div>
+                                        140جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        4.6 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        200جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        6.6 جيجا/يوم
+                                    </div>
+                                    <div>300جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        10 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        500جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        16.6 جيجا/يوم
+                                    </div>
+                                    <a href="hhttps://dsl.orange.eg/en/packages/Home-internet-packages"> <button
+                                            class="card-button">الذهاب للموقع</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noor -->
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                                src="public/assets/icons/noor.webp" alt="Noor logo">
+                            <span class="company-name2">Noor</span>
+                        </div>
+                        <div class="back">
+                            <div class="quota-list" style="--tooltip-color: #00adef;">
+                                <span class="company-name">Noor</span>
+                                <h1>الباقة <i class="fa-solid fa-arrow-left"></i>
+                                    المتوسط اليومي</h1>
+                                <div class="list">
+                                    <div>
+                                        200جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        6.6 جيجا/يوم
+                                    </div>
+                                    <div>
+                                        300جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        10 جيجا/يوم
+                                    </div>
+                                    <div>500جيجا
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        16.6 جيجا/يوم
+                                    </div>
+                                    <a href="https://adsl.noor.net/index.html">
+                                        <button class="card-button">الذهاب للموقع</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Vodafone -->
-            <div class="quota">
-                <div class="image">
-                    <img class="company-img" src="public/assets/icons/vodafone.webp" alt="vodafone"
-                        style="--image-width: 110px; --image-height:140px">
-                </div>
-                <div class="quota-list" style="--tooltip-color: red;">
-                    <h1>الباقة</h1>
-                    <ul class=" list">
-                        <li>140 جيجا</li>
-                        <li>250 جيجا</li>
-                        <li>400 جيجا</li>
-                        <li>600 جيجا</li>
-                    </ul>
-                </div>
-                <div class="quota-list" style="--tooltip-color: red;">
-                    <h1>المتوسط اليومي</h1>
-                    <ul class=" list">
-                        <li>4.6 جيجا/يوم</li>
-                        <li>8.3 جيجا/يوم</li>
-                        <li>13.3 جيجا/يوم</li>
-                        <li>20 جيجا/يوم</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Etisalat -->
-            <div class="quota">
-                <div class="image">
-                    <img class="company-img" src="public/assets/icons/etisalat.webp" alt="etisalat"
-                        style="--image-width: 100px; --image-height:150px">
-                </div>
-                <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
-                    <h1>الباقة</h1>
-                    <ul class="list">
-                        <li>140جيجا</li>
-                        <li>250جيجا</li>
-                        <li>400جيجا</li>
-                        <li>600جيجا</li>
-                    </ul>
-                </div>
-                <div class="quota-list" style="--tooltip-color: rgb(0, 255, 0);">
-                    <h1>المتوسط اليومي</h1>
-                    <ul class="list">
-                        <li>4.6 جيجا/يوم</li>
-                        <li>8.3 جيجا/يوم</li>
-                        <li>13.3 جيجا/يوم</li>
-                        <li>20 جيجا/يوم</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Orange -->
-            <div class="quota">
-                <div class="image">
-                    <img class="company-img" src="public/assets/icons/orange.webp" alt="Orange"
-                        style="--image-width: 120px; --image-height:120px">
-                </div>
-                <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
-                    <h1>الباقة</h1>
-                    <ul class="list">
-                        <li>140جيجا</li>
-                        <li>250جيجا</li>
-                        <li>400جيجا</li>
-                        <li>600جيجا</li>
-                    </ul>
-                </div>
-                <div class="quota-list" style="--tooltip-color: rgb(255, 81, 0);">
-                    <h1>المتوسط اليومي</h1>
-                    <ul class="list">
-                        <li>4.6 جيجا/يوم</li>
-                        <li>8.3 جيجا/يوم</li>
-                        <li>13.3 جيجا/يوم</li>
-                        <li>20 جيجا/يوم</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- noor -->
-            <div class="quota">
-                <div class="image">
-                    <img class="company-img" src="public/assets/icons/noor.webp" alt="noor"
-                        style="--image-width: 120px; --image-height:120px">
-                </div>
-                <div class="quota-list" style="--tooltip-color: cyan;">
-                    <h1>الباقة</h1>
-                    <ul class="list">
-                        <li>140جيجا</li>
-                        <li>250جيجا</li>
-                        <li>400جيجا</li>
-                        <li>600جيجا</li>
-                    </ul>
-                </div>
-                <div class="quota-list" style="--tooltip-color: cyan;">
-                    <h1>المتوسط اليومي</h1>
-                    <ul class="list">
-                        <li>4.6 جيجا/يوم</li>
-                        <li>8.3 جيجا/يوم</li>
-                        <li>13.3 جيجا/يوم</li>
-                        <li>20 جيجا/يوم</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
         <footer>
             <p>V0.7 - اخترع و أنشء بواسطة <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
