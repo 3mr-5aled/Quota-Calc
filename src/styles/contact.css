@@ -142,7 +142,7 @@ span {
   /* button with nice style */
   /* background-color: #42005a; */
   background-color: rgba(0, 0, 0, 0.66);
-  padding: 25px;
+  padding: 13px;
   margin: 10px;
   width: 20rem;
   min-height: 50px;
@@ -192,4 +192,7 @@ span {
 }
 .QA li a {
   padding: 5px;
+}
+.box i {
+  font-size: 1.3em;
 }

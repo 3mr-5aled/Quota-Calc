@@ -137,7 +137,34 @@ body > header > header > a:nth-child(1):hover {
     order: 3;
   }
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 3.3rem;
+  right: 0.7rem;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+}
 
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  #myBtn {
+    bottom: 75px;
+  }
+}
 footer {
   position: fixed;
   left: 0;
