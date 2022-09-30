@@ -387,3 +387,7 @@ h1 {
   font-size: 24px;
   margin-top: 0.5rem;
 }
+.clickhere {
+  color: yellow;
+  margin-top: 1.5rem;
+}
