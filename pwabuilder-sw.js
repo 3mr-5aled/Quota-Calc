@@ -1,20 +1,22 @@
-// This is the service worker with the Cache-first network
+// Establish a cache name
+const cacheName = 'MyFancyCacheName_v1';
 
-const CACHE = "pwabuilder-precache";
+self.addEventListener('fetch', (event) => {
+  // Check if this is a navigation request
+  if (event.request.mode === 'navigate') {
+    // Open the cache
+    event.respondWith(caches.open(cacheName).then((cache) => {
+      // Go to the network first
+      return fetch(event.request.url).then((fetchedResponse) => {
+        cache.put(event.request, fetchedResponse.clone());
 
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
-);
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
+        return fetchedResponse;
+      }).catch(() => {
+        // If the network is unavailable, get
+        return cache.match(event.request.url);
+      });
+    }));
+  } else {
+    return;
   }
 });
-
-workbox.routing.registerRoute(
-  new RegExp("/*"),
-  new workbox.strategies.CacheFirst({
-    cacheName: CACHE,
-  })
-);
