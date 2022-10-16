@@ -6,3 +6,7 @@
 
 The website also has some planned 📝 quotas from popular and famous
 internet companies in Egypt.
+
+### tips page for tips for saving and usage mechanism
+
+Now, you can enjoy never being worried of losing your quota 
