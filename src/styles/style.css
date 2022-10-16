@@ -18,6 +18,9 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.8em;
 }
+.center {
+  text-align: center;
+}
 
 /* .loader-wrapper {
   width: 100%;
@@ -75,9 +78,24 @@ h1 {
   border-radius: 25px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .calcBox {
     height: 100vh;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .calcBox {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .column.right {
+    margin-left: 0;
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -91,6 +109,7 @@ h1 {
   background: #00000099;
   width: 100vw;
   padding-bottom: 2rem;
+  padding-top: 5rem;
 }
 .quotalists2 {
   display: flex;
@@ -99,6 +118,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 }
 /* Left and right column */
@@ -118,6 +138,9 @@ h1 {
     margin-top: 3rem;
     /* margin-left: 2.5rem; */
   }
+  .column.right {
+    margin-left: 15rem;
+  }
 }
 
 /* right column */
@@ -128,6 +151,12 @@ h1 {
   margin-left: 2rem;
   margin-bottom: 2rem;
   padding: 40px 40px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .column.right {
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .column.right {
@@ -149,8 +178,8 @@ h1 {
   background-color: #00000099;
   color: black;
   border-radius: 25px;
-  max-width: fit-content;
   max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 form > * {
   background: linear-gradient(
@@ -197,35 +226,6 @@ button {
 button:hover {
   background-color: var(--purpleColor);
   border: 5px solid var(--purpleColor);
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 25px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: purple;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 25px;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: fit-content;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 600px) {
-  #myBtn {
-    bottom: 75px;
-  }
 }
 
 .head {
@@ -279,7 +279,7 @@ body > div:nth-child(7) {
 }
 .container {
   width: 20rem;
-  height: 30rem;
+  height: 35rem;
   perspective: 800px;
 }
 
@@ -324,17 +324,7 @@ body > div:nth-child(7) {
   text-align: center;
   align-items: center;
 }
-ul {
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  padding: 10px;
-}
-li {
-  list-style: none;
-  font-size: 25px;
-  text-transform: uppercase;
-}
+
 h1 {
   /* background-color: #e306ca; */
   color: white;
@@ -345,6 +335,7 @@ h1 {
 }
 .list {
   background-color: var(--main-color);
+  border: 2px solid var(--tooltip-color);
   color: white;
   border-radius: 15px;
   font-size: 24px;
@@ -380,10 +371,158 @@ h1 {
   border: var(--tooltip-color) solid 2px;
 }
 .company-name {
+  margin-top: 25px;
   font-size: 24px;
+  font-weight: bold;
   color: var(--tooltip-color);
 }
 .company-name2 {
   font-size: 24px;
   margin-top: 0.5rem;
+}
+.clickhere {
+  color: yellow;
+  margin-top: 1.5rem;
+}
+.usages {
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#usagestats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.usages > p,
+#usagestats p {
+  background: rgba(0, 0, 0, 0.856);
+  max-width: 50%;
+  font-size: 1.8em;
+}
+.usages > h2,
+#usagestats h2 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-bottom: 5px solid var(--lightPurpleColor);
+  border-radius: 25px;
+}
+.usages > ul,
+#usagestats ul {
+  max-width: 80%;
+}
+.source {
+  background: black;
+  border: 3px solid var(--lightPurpleColor);
+  padding: 15px;
+  border-radius: 25px;
+}
+.source > a {
+  text-decoration: none;
+  color: #b800be;
+}
+.quotalists3 {
+  background: transparent;
+  width: 100vw;
+  padding-bottom: 3rem;
+}
+.tg {
+  border: 20px solid white;
+  border-top: 20px solid #fff;
+  border-right: 20px solid #b800be;
+  border-left: 20px solid #b800be;
+  border-bottom: 20px solid #fff;
+  border-radius: 25px;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+  width: 40rem;
+  height: 20rem;
+}
+.tg td {
+  background-color: #ebf5ff;
+  border-style: solid;
+  border-width: 0px;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+  justify-content: center;
+}
+.tg th {
+  /* background-color: #409cff;
+  border-color: #9abad9; */
+  border-style: solid;
+  border-width: 0px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-wnsd {
+  background-color: #b800be;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.5em;
+}
+
+.tg .tg-7g6k {
+  background-color: #ebb9df;
+  border-color: inherit;
+  border-bottom: 2px solid white;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.4em;
+}
+.tg .tg-2j8k {
+  background-color: #ebb9df;
+  border-color: inherit;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.4em;
+}
+.usage-nav {
+  background-color: white !important;
+}
+.usage-nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.usage-nav li {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.usage-nav a {
+  text-decoration: none !important;
+  color: white;
+  background: #b800be;
+  padding: 10px;
+  border-radius: 25px;
+}
+.tipsul > li {
+  list-style: disc;
 }
