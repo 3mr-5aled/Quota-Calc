@@ -1,20 +1,13 @@
-/* .right {
-  float: left;
-}
-.left {
-  float: right;
-}
-@media screen and (min-width: 600px) {
-  .calcBox {
-    width: 85%;
-  }
-} */
 header {
   padding-left: 2rem;
   left: -1.3rem;
 }
+.column.left {
+  height: 65%;
+  margin-top: 5rem;
+}
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .calcBox {
     height: 100vh;
     display: flex;
@@ -27,7 +20,19 @@ header {
     align-content: center;
   }
 }
-.column.left {
-  height: 65%;
-  margin-top: 5rem;
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .calcBox {
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .column.left {
+    height: 50%;
+    margin-top: 5rem;
+    width: auto;
+  }
+  .column.right {
+    width: auto;
+  }
 }

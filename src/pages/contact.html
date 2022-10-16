@@ -17,54 +17,60 @@
     <meta property="og:description"
         content="This is a calculator for the quota enter your quota data and know your daily average use should be">
     <meta property="og:image" content="../../public/assets/icons//quotaCalcBannerPreview.webp">
-    <link rel="shortcut icon" href="../../public/assets/icons//favicon.webp" type="image/webp" />
+    <link rel="shortcut icon" href="../../favicon.png" type="image/webp" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles//contact.css">
     <link rel="stylesheet" href="../styles//main.css">
-    <link rel="shortcut icon" href="../../public/assets/icons//favicon.webp" type="image/png" />
+    <link rel="shortcut icon" href="../../favicon.png" type="image/png" />
 </head>
 
 <body>
     <header>
-        <a href="../../index"> <img src="../../public/assets/icons//favicon.webp" alt="Logo" width="50px"
+        <a href="../../index.html"> <img src=" ../../public/assets/icons//favicon.webp" alt="Logo" width="50px"
                 height="50px"></a>
-        <a href="./videoQuality">Video Calc</a>
-        <a href=".contact">Contact</a>
+        <a href="./videoQuality.html">Video Calc</a>
+        <a href=".contact.html">Contact</a>
     </header>
     <div class="arabic">
-        <a href="contact-ar">Arabic</a>
+        <a href="contact-ar.html">عربي</a>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <!-- partial:index.partial.html -->
     <div class="container">
-
-        <!-- <div class="contact-box">
-            <div class="right">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="text" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Phone">
-                <textarea placeholder="Message" class="field"></textarea>
-                <button class="btn">Send</button>
-            </div>
-        </div>
-    </div> -->
         <div class="button-container">
-            <a rel="noopener" href="https://3mr5aled.netlify.app/" target="_blank">
+            <div class="box">
+                <div class="box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a rel="noopener" href="https://www.facebook.com/quotacalc/" target="_blank">
+                        <span>Facebook Page</span>
+                    </a>
+                </div>
+                <div class="box">
+                    <a rel="noopener" href="https://t.me/quotacalc" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>Telegram channel</span>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <div class="box">
                     <img id="devlogo" src="../../public/assets/icons/facelogo.webp" alt="dev face icon" width="40px"
                         height="40px">
-                    <span>Developer website</span>
+                    <a rel="noopener" href="https://3mr5aled.netlify.app/" target="_blank">
+                        <span>Developer website</span>
+                    </a>
                 </div>
-            </a>
-            <a href="mailto:3mr5aled.dev@gmail.com" target="_blank">
                 <div class="box">
-                    <img src="../../public/assets/icons//gmail.webp" alt="mail image" width="40px" height="40px">
-                    <span>Mail</span>
+                    <a href="mailto:3mr5aled.dev@gmail.com" target="_blank">
+                        <img src="../../public/assets/icons/gmail.webp" alt="mail image" width="40px" height="40px">
+                        <span>Mail</span>
+                    </a>
                 </div>
-            </a>
+            </div>
             <a href="#" target="_blank">
                 <div class="box QA">
-                    <!-- <img src="../../public/assets/icons//gmail.webp" alt="mail image" width="40px" height="40px"> -->
                     <span>Q&A</span>
                     <ul>
                         <li>Who are we?</li>
@@ -73,10 +79,18 @@
                     </ul>
                 </div>
             </a>
+            </a>
         </div>
         <footer>
-            <p>V0.7 - Created and Built by <a href="https://3mr5aled.netlify.com" rel="noopener" target="_blank">3mr
-                    5aled</a></p>
+            <p>V0.7 - Created and Built by <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
+                    target="_blank">3mr
+                    5aled</a>
+            </p>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/quotacalc/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://t.me/quotacalc"><i class="fa-brands fa-telegram"></i></a>
+            </div>
         </footer>
 
 

@@ -126,6 +126,7 @@ a {
 }
 span {
   padding: 5px;
+  flex-wrap: nowrap;
 }
 .button-container {
   display: flex;
@@ -141,9 +142,9 @@ span {
   /* button with nice style */
   /* background-color: #42005a; */
   background-color: rgba(0, 0, 0, 0.66);
-  padding: 25px;
+  padding: 13px;
   margin: 10px;
-  width: 250px;
+  width: 20rem;
   min-height: 50px;
   color: #fff;
   font-size: 1.1rem;
@@ -167,6 +168,11 @@ span {
 .box:hover {
   background-color: #014775;
 }
+.sociallinks {
+  list-style: none;
+  margin-left: -2px;
+  padding: 0;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -184,37 +190,9 @@ span {
 .QA li {
   text-align: left;
 }
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 1px;
+.QA li a {
+  padding: 5px;
 }
-
-@media screen and (max-width: 600px) {
-  footer {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: fit-content;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1px;
-  }
-}
-
-footer p {
-  padding: 2px;
-  margin: 2px;
-}
-footer a {
-  text-decoration: none;
-  color: #009aa4 !important;
-  font-weight: bold;
+.box i {
+  font-size: 1.3em;
 }
