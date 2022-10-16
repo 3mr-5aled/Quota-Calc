@@ -9,8 +9,4 @@ internet companies in Egypt.
 
 ### tips page for tips for saving and usage mechanism
 
-<<<<<<< HEAD
 Now, you can enjoy never being worried of losing your quota 
-=======
-Now, you can enjoy never being worried of losing your quota
->>>>>>> 44a6a71ac3a678cd13de6bce4dd0130ebd40ef3c
