@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QuotaCalc - Tips</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Internet, We, Vodafone, Orange, Etisalat, Quota">
+    <meta name="author" content="Amr Khaled">
+    <meta name="image" content="../../public/assets/icons/quotaCalcBannerPreview.webp">
+    <meta name="description"
+        content="This is a calculator for the quota enter your quota data and know your daily average use should be">
+    <meta property="og:url" content="https://quotacalc.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quota Calc">
+    <meta property="og:description"
+        content="This is a calculator for the quota enter your quota data and know your daily average use should be">
+    <meta property="og:image" content="../../public/assets/icons/quotaCalcBannerPreview.webp">
+    <link rel="shortcut icon" href="../../favicon.png" type="image/webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../../favicon.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html"> <img src=" ../../public/assets/icons//favicon.webp" alt="Logo" width="50px"
+                height="50px"></a>
+        <a href="tips.html">Tips</a>
+        <a href="contact.html">Contact</a>
+    </header>
+    <div class="arabic">
+        <a href="tips-ar.html">عربي</a>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <div id="calculatedquotas" class="quotalists">
+        <div class="usage-nav">
+            <ul>
+                <li><a href="#calculatedquotas">Calculated Quotas</a></li>
+                <li><a href="#usagespermonth">Usage per month</a></li>
+                <li><a href="#usagestats">Usage stats</a></li>
+                <li><a href="#activityusage">Usage Activity</a></li>
+                <li><a href="#tips">Tips for saving</a></li>
+            </ul>
+        </div>
+        <div class="head">
+            <h2 class="center">Here are some calculated quotas from <br> the biggest internet companys
+                in Egypt.
+            </h2>
+        </div>
+        <div class="quotalists2">
+            <!-- We -->
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <img class="company-img" style="--image-width: 100px; --image-height:150px"
+                            src="../../public/assets/icons/we.webp" alt="We logo">
+                        <span class="company-name2">We</span>
+                        <span class="clickhere">Click here for details</span>
+                    </div>
+                    <div class="back">
+                        <div class="quota-list" style="--tooltip-color: #BD00FF;">
+                            <span class="company-name">We</span>
+                            <h1>Quota <i class="fa-solid fa-arrow-right"></i> Daily Average</h1>
+                            <div class="list">
+                                <div>
+                                    140gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    4.6 GB/day
+                                </div>
+                                <div>
+                                    250gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    8.3 GB/day
+                                </div>
+                                <div>400gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    13 GB/day
+                                </div>
+                                <div>
+                                    600gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    20 GB/day
+                                </div>
+                                <a href="https://te.eg/wps/portal/te/Personal/WE-SPACE/"> <button class="card-button">Go
+                                        to
+                                        Website</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vodafone -->
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <img class="company-img" style="--image-width: 110px; --image-height:140px"
+                            src="../../public/assets/icons/vodafone.webp" alt="Vodafone logo">
+                        <span class="company-name2">Vodafone</span>
+                        <span class="clickhere">Click here for details</span>
+                    </div>
+                    <div class="back">
+                        <div class="quota-list" style="--tooltip-color: #e60000;">
+                            <span class="company-name">Vodafone</span>
+                            <h1>Quota <i class="fa-solid fa-arrow-right"></i> Daily Average</h1>
+                            <div class="list">
+                                <div>
+                                    140gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    4.6 GB/day
+                                </div>
+                                <div>
+                                    200gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    6.6 GB/day
+                                </div>
+                                <div>300gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    10 GB/day
+                                </div>
+                                <div>
+                                    600gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    20 GB/day
+                                </div>
+                                <a href="https://eshop.vodafone.com.eg/shop/Internet-Services/DSL"> <button
+                                        class="card-button">Go to
+                                        Website</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Etisalat -->
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                            src="../../public/assets/icons/etisalat.webp" alt="Etisalat logo">
+                        <span class="company-name2">Etisalat</span>
+                        <span class="clickhere">Click here for details</span>
+                    </div>
+                    <div class="back">
+                        <div class="quota-list" style="--tooltip-color: #c6a25b;">
+                            <span class="company-name">Etisalat</span>
+                            <h1>Quota <i class="fa-solid fa-arrow-right"></i> Daily
+                                Average</h1>
+                            <div class="list">
+                                <div>
+                                    140gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    4.6 GB/day
+                                </div>
+                                <div>
+                                    200gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    6.6 GB/day
+                                </div>
+                                <div>300gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    10 GB/day
+                                </div>
+                                <div>
+                                    600gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    20 GB/day
+                                </div>
+                                <a
+                                    href="https://www.etisalat.eg/StaticFiles/portal/etisalat/pages/plans/mega_monthly.html">
+                                    <button class="card-button">Go to Website</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Orange -->
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                            src="../../public/assets/icons/orange.webp" alt="Orange logo">
+                        <span class="company-name2">Orange</span>
+                        <span class="clickhere">Click here for details</span>
+                    </div>
+                    <div class="back">
+                        <div class="quota-list" style="--tooltip-color: #ff6600;">
+                            <span class="company-name">Orange</span>
+                            <h1>Quota <i class="fa-solid fa-arrow-right"></i>
+                                Daily Average</h1>
+                            <div class="list">
+                                <div>
+                                    140gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    4.6 GB/day
+                                </div>
+                                <div>
+                                    200gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    6.6 GB/day
+                                </div>
+                                <div>300gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    10 GB/day
+                                </div>
+                                <div>
+                                    500gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    16.6 GB/day
+                                </div>
+                                <a href="hhttps://dsl.orange.eg/en/packages/Home-internet-packages"> <button
+                                        class="card-button">Go to
+                                        Website</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Noor -->
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <img class="company-img" style="--image-width: 120px; --image-height:120px"
+                            src="../../public/assets/icons/noor.webp" alt="Noor logo">
+                        <span class="company-name2">Noor</span>
+                        <span class="clickhere">Click here for details</span>
+                    </div>
+                    <div class="back">
+                        <div class="quota-list" style="--tooltip-color: #00adef;">
+                            <span class="company-name">Noor</span>
+                            <h1>Quota <i class="fa-solid fa-arrow-right"></i>
+                                Daily Average</h1>
+                            <div class="list">
+                                <div>
+                                    200gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    6.6 GB/day
+                                </div>
+                                <div>
+                                    300gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    10 GB/day
+                                </div>
+                                <div>500gb
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    16.6 GB/day
+                                </div>
+                                <a href="https://adsl.noor.net/index.html">
+                                    <button class="card-button">Go
+                                        to
+                                        Website</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="usages" class="usages">
+        <div class="quotalists3">
+            <div class="head">
+                <h2 class="center">Tips</h2>
+            </div>
+        </div>
+
+        <div id="usagespermonth">
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-wnsd">Overall usage</th>
+                        <th class="tg-wnsd">Data per month</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-7g6k">Light</td>
+                        <td class="tg-2j8k">1GB+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Medium</td>
+                        <td class="tg-2j8k">6GB+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Heavy</td>
+                        <td class="tg-2j8k">20GB+</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Very heavy</td>
+                        <td class="tg-2j8k">30GB+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="usagestats">
+
+            <p>
+            <h2>1GB data sample monthly usage:</h2>
+            <ul>
+                <li> • 40 minutes daily of web browsing</li>
+                <li> • Or 20 minutes daily of social media apps</li>
+                <li> • Or 22 hours per month of music</li>
+                <li> • Or 1-2 films per month (low or medium quality)</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>2GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 80 minutes of daily web browsing</li>
+                <li>• Or at least 40 minutes of daily social media</li>
+                <li>• Or 45 hours per month of music</li>
+                <li>• Or 3-4 films per month (low or medium quality)</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>4GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 3 hours daily of web browsing</li>
+                <li>• Or at least 90 minutes of daily social media</li>
+                <li>• Or 40 mins of browsing and 2 hours of music daily</li>
+                <li>• Or 40 mins of browsing daily and a few films each month (medium quality)</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>8GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 6 hours daily of web browsing</li>
+                <li>• Or at least 3 hours daily of social media apps</li>
+                <li>• Or enough to stream 32 hours of medium quality video</li>
+                <li>• Or enough for a mix of browsing, music, and the occasional video</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>20GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 2 hours of web, 4 hours of music and 1-2 hours of video daily</li>
+                <li>• No danger of running out of data if you're only web browsing</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>50GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 3 hours of web, 3 hours of music and 2 medium quality streamed films daily</li>
+            </ul>
+            </p>
+
+            <p>
+            <h2>100GB data sample monthly usage:</h2>
+            <ul>
+                <li>• 30 hours of high-quality video per month</li>
+                <li>• Or a robust mix of use types</li>
+            </ul>
+            </p>
+        </div>
+
+        <div id="activityusage">
+
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-wnsd">Activity</th>
+                        <th class="tg-wnsd">Average data use(per hour)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-7g6k">Web browsing/Social media</td>
+                        <td class="tg-2j8k">20-120MB</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Instant messaging </td>
+                        <td class="tg-2j8k">50MB</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Email</td>
+                        <td class="tg-2j8k">1-100MB (depending on attachments)</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Music streaming</td>
+                        <td class="tg-2j8k">45MB</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Video streaming</td>
+                        <td class="tg-2j8k">250MB</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Online gaming</td>
+                        <td class="tg-2j8k">3-300MB</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-7g6k">Video calling</td>
+                        <td class="tg-2j8k">200-300MB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <h2 id="tips">Tips for saving your quota and your money 😎💵</h2>
+        <ul class="tipsul">
+            <li>turn on data saver on all apps (if exists)</li>
+            <li>watch videos on 240p(for normal videos) or 360p(for educatoinal and tutorial videos)</li>
+            <li>stop auto download photos and videos in all apps</li>
+            <li>stop auto-updates for apps and system</li>
+        </ul>
+
+
+        <span class="source">Research from <a href="https://3g.co.uk/guides/how-much-data-do-i-need">3G</a>
+            website</span>
+    </div>
+
+    <footer>
+        <p>V0.7 - Created and Built by <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
+                target="_blank">3mr5aled</a>
+        </p>
+        <div class="social-icons">
+            <a title="Facebook" rel="noopener" href="https://www.facebook.com/quotacalc/"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a title="telegram" rel="noopener" href="https://t.me/quotacalc"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </footer>
+    </div>
+    <script src="src/script/script.js"></script>
+
+</body>
+
+</html>

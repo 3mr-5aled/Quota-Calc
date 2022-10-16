@@ -596,18 +596,6 @@
       "sizes": "3840x2160",
       "type": "image/png",
       "description": "A screenshot of  the companys calculated Quotas"
-    },
-    {
-      "src": "assets/screenshots/mobile_screenshot_1.jpg",
-      "sizes": "1080x2154",
-      "type": "image/jpg",
-      "description": "A screenshot of the home page"
-    },
-    {
-      "src": "assets/screenshots/mobile_screenshot_2.png",
-      "sizes": "2160x3840",
-      "type": "image/png",
-      "description": "A screenshot of the companys calculated Quotas"
     }
   ],
   "related_applications": [
@@ -624,16 +612,6 @@
       "icons": [
         {
           "src": "assets/icons/calculator.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "Video Calc",
-      "url": "../src/pages/videoQuality.html",
-      "icons": [
-        {
-          "src": "assets/icons/video.png",
           "sizes": "192x192"
         }
       ]

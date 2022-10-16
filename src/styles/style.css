@@ -18,6 +18,9 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.8em;
 }
+.center {
+  text-align: center;
+}
 
 /* .loader-wrapper {
   width: 100%;
@@ -106,6 +109,7 @@ h1 {
   background: #00000099;
   width: 100vw;
   padding-bottom: 2rem;
+  padding-top: 5rem;
 }
 .quotalists2 {
   display: flex;
@@ -222,35 +226,6 @@ button {
 button:hover {
   background-color: var(--purpleColor);
   border: 5px solid var(--purpleColor);
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 3.3rem;
-  right: 0.7rem;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: purple;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 25px;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: fit-content;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 600px) {
-  #myBtn {
-    bottom: 75px;
-  }
 }
 
 .head {
@@ -408,4 +383,146 @@ h1 {
 .clickhere {
   color: yellow;
   margin-top: 1.5rem;
+}
+.usages {
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#usagestats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.usages > p,
+#usagestats p {
+  background: rgba(0, 0, 0, 0.856);
+  max-width: 50%;
+  font-size: 1.8em;
+}
+.usages > h2,
+#usagestats h2 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-bottom: 5px solid var(--lightPurpleColor);
+  border-radius: 25px;
+}
+.usages > ul,
+#usagestats ul {
+  max-width: 80%;
+}
+.source {
+  background: black;
+  border: 3px solid var(--lightPurpleColor);
+  padding: 15px;
+  border-radius: 25px;
+}
+.source > a {
+  text-decoration: none;
+  color: #b800be;
+}
+.quotalists3 {
+  background: transparent;
+  width: 100vw;
+  padding-bottom: 3rem;
+}
+.tg {
+  border: 20px solid white;
+  border-top: 20px solid #fff;
+  border-right: 20px solid #b800be;
+  border-left: 20px solid #b800be;
+  border-bottom: 20px solid #fff;
+  border-radius: 25px;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+  width: 40rem;
+  height: 20rem;
+}
+.tg td {
+  background-color: #ebf5ff;
+  border-style: solid;
+  border-width: 0px;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+  justify-content: center;
+}
+.tg th {
+  /* background-color: #409cff;
+  border-color: #9abad9; */
+  border-style: solid;
+  border-width: 0px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-wnsd {
+  background-color: #b800be;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.5em;
+}
+
+.tg .tg-7g6k {
+  background-color: #ebb9df;
+  border-color: inherit;
+  border-bottom: 2px solid white;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.4em;
+}
+.tg .tg-2j8k {
+  background-color: #ebb9df;
+  border-color: inherit;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.4em;
+}
+.usage-nav {
+  background-color: white !important;
+}
+.usage-nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.usage-nav li {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.usage-nav a {
+  text-decoration: none !important;
+  color: white;
+  background: #b800be;
+  padding: 10px;
+  border-radius: 25px;
+}
+.tipsul > li {
+  list-style: disc;
 }
