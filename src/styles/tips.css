@@ -215,6 +215,11 @@ h1 {
 #biglist {
   width: 30rem !important;
 }
+@media screen and (max-width: 680px) {
+  #biglist {
+    width: 25rem !important;
+  }
+}
 .list > div {
   border: solid var(--tooltip-color);
   border-radius: 15px;
