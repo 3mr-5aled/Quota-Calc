@@ -1,33 +1,33 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://quotacalc.netlify.app/</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://quotacalc.netlify.app/src/pages/tips</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://quotacalc.netlify.app/src/pages/contact</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://quotacalc.netlify.app/index-ar</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://quotacalc.netlify.app/src/pages/tips-ar</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://quotacalc.netlify.app/src/pages/contact-ar</loc>
-<lastmod>2022-10-21T11:31:21+00:00</lastmod>
-<priority>0.64</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.quotacalc.netlify.app</loc>
+		<priority>1.00</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/index-ar.html</loc>
+		<priority>0.75</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/tips.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/tips-ar.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/contact.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/contact-ar.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-16</lastmod>
+	</url>
 </urlset>

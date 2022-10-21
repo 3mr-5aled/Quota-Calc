@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tips.css">
     <link rel="shortcut icon" href="../../favicon.png" type="image/png" />
 </head>
 
@@ -270,170 +271,174 @@
                 <h2 class="center">Tips</h2>
             </div>
         </div>
+        <div class="usagepermonth">
+            <div id="overallusage" class="quota-list" style="--tooltip-color: #BD00FF;">
+                <h1>Overall usage <i class="fa-solid fa-arrow-right"></i> Data per month</h1>
+                <div class="list">
+                    <div>
+                        Light
+                        <i class="fa-solid fa-arrow-right"></i>
+                        1GB+
+                    </div>
+                    <div>
+                        Medium
+                        <i class="fa-solid fa-arrow-right"></i>
+                        6GB+
+                    </div>
+                    <div>
+                        Heavy
+                        <i class="fa-solid fa-arrow-right"></i>
+                        20GB+
+                    </div>
+                    <div>
+                        Very heavy
+                        <i class="fa-solid fa-arrow-right"></i>
+                        30GB+
+                    </div>
+                </div>
+            </div>
 
-        <div id="usagespermonth">
-            <table class="tg">
-                <thead>
-                    <tr>
-                        <th class="tg-wnsd">Overall usage</th>
-                        <th class="tg-wnsd">Data per month</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tg-7g6k">Light</td>
-                        <td class="tg-2j8k">1GB+</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Medium</td>
-                        <td class="tg-2j8k">6GB+</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Heavy</td>
-                        <td class="tg-2j8k">20GB+</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Very heavy</td>
-                        <td class="tg-2j8k">30GB+</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="usagestats">
+                <p>
+                <h2>1GB data sample monthly usage:</h2>
+                <ul>
+                    <li> • 40 minutes daily of web browsing</li>
+                    <li> • Or 20 minutes daily of social media apps</li>
+                    <li> • Or 22 hours per month of music</li>
+                    <li> • Or 1-2 films per month (low or medium quality)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>2GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 80 minutes of daily web browsing</li>
+                    <li>• Or at least 40 minutes of daily social media</li>
+                    <li>• Or 45 hours per month of music</li>
+                    <li>• Or 3-4 films per month (low or medium quality)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>4GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 3 hours daily of web browsing</li>
+                    <li>• Or at least 90 minutes of daily social media</li>
+                    <li>• Or 40 mins of browsing and 2 hours of music daily</li>
+                    <li>• Or 40 mins of browsing daily and a few films each month (medium quality)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>8GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 6 hours daily of web browsing</li>
+                    <li>• Or at least 3 hours daily of social media apps</li>
+                    <li>• Or enough to stream 32 hours of medium quality video</li>
+                    <li>• Or enough for a mix of browsing, music, and the occasional video</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>20GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 2 hours of web, 4 hours of music and 1-2 hours of video daily</li>
+                    <li>• No danger of running out of data if you're only web browsing</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>50GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 3 hours of web, 3 hours of music and 2 medium quality streamed films daily</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>100GB data sample monthly usage:</h2>
+                <ul>
+                    <li>• 30 hours of high-quality video per month</li>
+                    <li>• Or a robust mix of use types</li>
+                </ul>
+                </p>
+            </div>
+
+            <div id="overallusage" class="quota-list" style="--tooltip-color: #BD00FF;">
+
+                <h1>Activity <i class="fa-solid fa-arrow-right"></i> Average data use(per hour)</h1>
+                <div id="biglist" class="list">
+                    <div>
+                        <i class="fa-solid fa-globe fa-bounce" style="color:blue;"></i>
+                        browsing/Social media
+                        <i class="fa-solid fa-arrow-right"></i>
+                        20-120MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-message fa-bounce" style="color:rgb(255, 217, 0);"></i>
+                        Instant messaging
+                        <i class="fa-solid fa-arrow-right"></i>
+                        50MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope fa-bounce" style="color:red;"></i>
+                        Email
+                        <i class="fa-solid fa-arrow-right"></i>
+                        1-100MB (depending on attachments)
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-red fa-headphones fa-bounce" style="color:grey;"></i>
+                        Audio streaming
+                        <i class="fa-solid fa-arrow-right"></i>
+                        45MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-video fa-bounce" style="color:cyan;"></i>
+                        Video streaming
+                        <i class="fa-solid fa-arrow-right"></i>
+                        250MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad fa-bounce" style="color:purple;"></i>
+                        Online gaming
+                        <i class="fa-solid fa-arrow-right"></i>
+                        3-300MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone-volume fa-bounce" style="color:green;"></i>
+                        Video calling
+                        <i class="fa-solid fa-arrow-right"></i>
+                        200-300MB
+                    </div>
+                </div>
+            </div>
+
+            <div id="usagestats">
+                <p>
+                <h2>Tips for saving your quota and your money 😎💵</h2>
+                <ul>
+                    <li> • turn on data saver on all apps (if exists)</li>
+                    <li> • watch videos on 240p(for normal videos) or 360p(for educatoinal and tutorial videos)</li>
+                    <li> • stop auto download photos and videos in all apps</li>
+                    <li> • stop auto-updates for apps and system</li>
+                </ul>
+                </p>
+
+                <span class="source">Research from <a href="https://3g.co.uk/guides/how-much-data-do-i-need">3G</a>
+                    website</span>
+            </div>
         </div>
 
-
-        <div id="usagestats">
-
-            <p>
-            <h2>1GB data sample monthly usage:</h2>
-            <ul>
-                <li> • 40 minutes daily of web browsing</li>
-                <li> • Or 20 minutes daily of social media apps</li>
-                <li> • Or 22 hours per month of music</li>
-                <li> • Or 1-2 films per month (low or medium quality)</li>
-            </ul>
+        <footer>
+            <p>V0.7 - Created and Built by <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
+                    target="_blank">3mr5aled</a>
             </p>
-
-            <p>
-            <h2>2GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 80 minutes of daily web browsing</li>
-                <li>• Or at least 40 minutes of daily social media</li>
-                <li>• Or 45 hours per month of music</li>
-                <li>• Or 3-4 films per month (low or medium quality)</li>
-            </ul>
-            </p>
-
-            <p>
-            <h2>4GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 3 hours daily of web browsing</li>
-                <li>• Or at least 90 minutes of daily social media</li>
-                <li>• Or 40 mins of browsing and 2 hours of music daily</li>
-                <li>• Or 40 mins of browsing daily and a few films each month (medium quality)</li>
-            </ul>
-            </p>
-
-            <p>
-            <h2>8GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 6 hours daily of web browsing</li>
-                <li>• Or at least 3 hours daily of social media apps</li>
-                <li>• Or enough to stream 32 hours of medium quality video</li>
-                <li>• Or enough for a mix of browsing, music, and the occasional video</li>
-            </ul>
-            </p>
-
-            <p>
-            <h2>20GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 2 hours of web, 4 hours of music and 1-2 hours of video daily</li>
-                <li>• No danger of running out of data if you're only web browsing</li>
-            </ul>
-            </p>
-
-            <p>
-            <h2>50GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 3 hours of web, 3 hours of music and 2 medium quality streamed films daily</li>
-            </ul>
-            </p>
-
-            <p>
-            <h2>100GB data sample monthly usage:</h2>
-            <ul>
-                <li>• 30 hours of high-quality video per month</li>
-                <li>• Or a robust mix of use types</li>
-            </ul>
-            </p>
-        </div>
-
-        <div id="activityusage">
-
-            <table class="tg">
-                <thead>
-                    <tr>
-                        <th class="tg-wnsd">Activity</th>
-                        <th class="tg-wnsd">Average data use(per hour)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="tg-7g6k">Web browsing/Social media</td>
-                        <td class="tg-2j8k">20-120MB</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Instant messaging </td>
-                        <td class="tg-2j8k">50MB</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Email</td>
-                        <td class="tg-2j8k">1-100MB (depending on attachments)</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Music streaming</td>
-                        <td class="tg-2j8k">45MB</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Video streaming</td>
-                        <td class="tg-2j8k">250MB</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Online gaming</td>
-                        <td class="tg-2j8k">3-300MB</td>
-                    </tr>
-                    <tr>
-                        <td class="tg-7g6k">Video calling</td>
-                        <td class="tg-2j8k">200-300MB</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <br>
-
-        <h2 id="tips">Tips for saving your quota and your money 😎💵</h2>
-        <ul class="tipsul">
-            <li>turn on data saver on all apps (if exists)</li>
-            <li>watch videos on 240p(for normal videos) or 360p(for educatoinal and tutorial videos)</li>
-            <li>stop auto download photos and videos in all apps</li>
-            <li>stop auto-updates for apps and system</li>
-        </ul>
-
-
-        <span class="source">Research from <a href="https://3g.co.uk/guides/how-much-data-do-i-need">3G</a>
-            website</span>
-    </div>
-
-    <footer>
-        <p>V0.7 - Created and Built by <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
-                target="_blank">3mr5aled</a>
-        </p>
-        <div class="social-icons">
-            <a title="Facebook" rel="noopener" href="https://www.facebook.com/quotacalc/"><i
-                    class="fa-brands fa-facebook"></i></a>
-            <a title="telegram" rel="noopener" href="https://t.me/quotacalc"><i class="fa-brands fa-telegram"></i></a>
-        </div>
-    </footer>
+            <div class="social-icons">
+                <a title="Facebook" rel="noopener" href="https://www.facebook.com/quotacalc/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a title="telegram" rel="noopener" href="https://t.me/quotacalc"><i
+                        class="fa-brands fa-telegram"></i></a>
+            </div>
+        </footer>
     </div>
     <script src="src/script/script.js"></script>
 

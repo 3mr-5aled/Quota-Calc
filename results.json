@@ -14,7 +14,7 @@
       }
     },
     {
-      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.png",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "filePath": "/public/assets/icons/quotaCalcBannerPreview.webp",
+      "filePath": "/public/assets/icons/quotaCalcBannerPreview.png",
       "success": false,
       "error": {
         "errno": "ENOTFOUND",

@@ -1,0 +1,222 @@
+.usage-nav {
+  background-color: white !important;
+}
+.usage-nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.usage-nav li {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.usage-nav a {
+  text-decoration: none !important;
+  color: white;
+  background: #b800be;
+  padding: 10px;
+  border-radius: 25px;
+}
+.tipsul > li {
+  list-style: disc;
+}
+
+@media screen and (max-width: 680px) {
+  .usage-nav > ul {
+    flex-wrap: wrap;
+  }
+}
+.quota-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#overallusage {
+  text-align: center;
+}
+#overallusage > .list > div {
+  background-color: white;
+  color: black;
+  border: 5px solid #b800be;
+}
+
+.list {
+  background-color: var(--main-color);
+  border: 2px solid var(--tooltip-color);
+  color: white;
+  border-radius: 15px;
+  font-size: 24px;
+  padding: 1.2em 7px;
+  line-height: 2em;
+  width: 17rem;
+}
+.list > div {
+  border: solid var(--tooltip-color);
+  border-radius: 15px;
+  margin: 5px;
+}
+.card-button {
+  cursor: pointer;
+  background: var(--tooltip-color);
+  font-size: 20px;
+  position: relative;
+  top: 0.8rem;
+  color: white;
+  border: solid white;
+  border-radius: 15px;
+  padding: 5px;
+}
+.card-button:hover {
+  background-color: transparent;
+  border: var(--tooltip-color) solid 2px;
+}
+.company-name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--tooltip-color);
+}
+.company-name2 {
+  font-size: 24px;
+  margin-top: 0.5rem;
+}
+.clickhere {
+  color: yellow;
+  margin-top: 1.5rem;
+}
+.usages {
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#usagestats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.usages > p,
+#usagestats p {
+  background: rgba(0, 0, 0, 0.856);
+  max-width: 50%;
+  font-size: 1.8em;
+}
+.usages > h2,
+#usagestats > h2 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-bottom: 5px solid var(--lightPurpleColor);
+  border-radius: 25px;
+  text-align: center;
+}
+.usages > ul,
+#usagestats ul {
+  max-width: 80%;
+}
+.source {
+  background: black;
+  border: 3px solid var(--lightPurpleColor);
+  padding: 15px;
+  border-radius: 25px;
+}
+.source > a {
+  text-decoration: none;
+  color: #b800be;
+}
+.quotalists3 {
+  background: transparent;
+  width: 100vw;
+  padding-bottom: 3rem;
+}
+.company-img {
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+  width: var(--image-width);
+  height: var(--image-height);
+  margin: 50px;
+}
+.container {
+  width: 20rem;
+  height: 35rem;
+  perspective: 800px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px var(--main-color);
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main-color);
+}
+
+.back {
+  background: var(--main-color);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  /* background-color: #e306ca; */
+  color: white;
+  border-radius: 25px;
+  padding: 15px;
+  /* margin: 0px; */
+  font-size: 24px;
+}
+.list {
+  background-color: var(--main-color);
+  border: 2px solid var(--tooltip-color);
+  color: white;
+  border-radius: 15px;
+  font-size: 24px;
+  padding: 1.2em 7px;
+  line-height: 2em;
+  width: 17rem;
+}
+#biglist {
+  width: 30rem !important;
+}
+.list > div {
+  border: solid var(--tooltip-color);
+  border-radius: 15px;
+  margin: 5px;
+}
