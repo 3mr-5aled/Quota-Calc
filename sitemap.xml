@@ -8,26 +8,26 @@
 	<url>
 		<loc>https://www.quotacalc.netlify.app/index-ar.html</loc>
 		<priority>0.75</priority>
-		<lastmod>2022-10-16</lastmod>
-	</url>
-	<url>
-		<loc>https://www.quotacalc.netlify.app/src/pages/tips.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-10-16</lastmod>
-	</url>
-	<url>
-		<loc>https://www.quotacalc.netlify.app/src/pages/tips-ar.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-10-16</lastmod>
-	</url>
-	<url>
-		<loc>https://www.quotacalc.netlify.app/src/pages/contact.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-10-16</lastmod>
+		<lastmod>2022-10-21</lastmod>
 	</url>
 	<url>
 		<loc>https://www.quotacalc.netlify.app/src/pages/contact-ar.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2022-10-16</lastmod>
+		<lastmod>2022-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/contact.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/tips-ar.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.quotacalc.netlify.app/src/pages/tips.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-10-21</lastmod>
 	</url>
 </urlset>

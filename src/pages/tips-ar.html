@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <title>QuotaCalc - نصائح</title>
@@ -24,21 +24,32 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/tips.css">
+    <link rel="stylesheet" href="../styles/font-awesome-animation.min.css">
     <link rel="shortcut icon" href="../../favicon.png" type="image/png" />
 </head>
 
 <body>
     <header>
-        <a href="../../index.html"> <img src=" ../../public/assets/icons//favicon.webp" alt="Logo" width="50px"
+        <a href="../../index-ar.html"> <img src=" ../../public/assets/icons//favicon.webp" alt="Logo" width="50px"
                 height="50px"></a>
-        <a href="tips.html">Tips</a>
-        <a href="contact.html">Contact</a>
+        <a href="tips-ar.html" id="leftnav">نصائح</a>
+        <a href="contact-ar.html">للتواصل</a>
     </header>
     <div class="arabic">
-        <a href="tips.html">English</a>
+        <a href="tips.html"><img title="translate"
+                src="https://img.icons8.com/small/32/ffffff/english-to-arabic.png" /></a>
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-    <div class="quotalists">
+    <div id="calculatedquotas" class="quotalists">
+        <div class="usage-nav">
+            <ul>
+                <!-- <li><a href="#calculatedquotas">Calculated Quotas</a></li> -->
+                <li><a href="#usagepermonth">الاستخدام شهريا</a></li>
+                <li><a href="#usagestats">احصائيات الاستخدام</a></li>
+                <li><a href="#activity">الإستهلاك تبعا للنشاط</a></li>
+                <li><a href="#tips">نصائح لتوفير الباقة</a></li>
+            </ul>
+        </div>
         <div class="head">
             <h2 style="text-align: center;">هما توجد بعض الباقات المحسوبة من <br> أكبر شركات الإنترنت في مصر
             </h2>
@@ -56,25 +67,26 @@
                     <div class="back">
                         <div class="quota-list" style="--tooltip-color: #BD00FF;">
                             <span class="company-name">We</span>
-                            <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                            <h1>الباقة <i class="fa-solid fa-arrow-left animated faa-horizontal"></i> المتوسط اليومي
+                            </h1>
                             <div class="list">
                                 <div>
                                     140جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     4.6 جيجا/يوم
                                 </div>
                                 <div>
                                     250جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     8.3 جيجا/يوم
                                 </div>
                                 <div>400جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     13 جيجا/يوم
                                 </div>
                                 <div>
                                     600جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     20 جيجا/يوم
                                 </div>
                                 <a href="https://te.eg/wps/portal/te/Personal/WE-SPACE/"> <button
@@ -97,25 +109,26 @@
                     <div class="back">
                         <div class="quota-list" style="--tooltip-color: #e60000;">
                             <span class="company-name">Vodafone</span>
-                            <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                            <h1>الباقة <i class="fa-solid fa-arrow-left animated faa-horizontal"></i> المتوسط اليومي
+                            </h1>
                             <div class="list">
                                 <div>
                                     140جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     4.6 جيجا/يوم
                                 </div>
                                 <div>
                                     200جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     6.6 جيجا/يوم
                                 </div>
                                 <div>300جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     10 جيجا/يوم
                                 </div>
                                 <div>
                                     600جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     20 جيجا/يوم
                                 </div>
                                 <a href="https://eshop.vodafone.com.eg/shop/Internet-Services/DSL"> <button
@@ -138,25 +151,26 @@
                     <div class="back">
                         <div class="quota-list" style="--tooltip-color: #c6a25b;">
                             <span class="company-name">Etisalat</span>
-                            <h1>الباقة <i class="fa-solid fa-arrow-left"></i> المتوسط اليومي</h1>
+                            <h1>الباقة <i class="fa-solid fa-arrow-left animated faa-horizontal"></i> المتوسط اليومي
+                            </h1>
                             <div class="list">
                                 <div>
                                     140جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     4.6 جيجا/يوم
                                 </div>
                                 <div>
                                     200جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     6.6 جيجا/يوم
                                 </div>
                                 <div>300جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     10 جيجا/يوم
                                 </div>
                                 <div>
                                     600جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     20 جيجا/يوم
                                 </div>
                                 <a
@@ -180,26 +194,26 @@
                     <div class="back">
                         <div class="quota-list" style="--tooltip-color: #ff6600;">
                             <span class="company-name">Orange</span>
-                            <h1>الباقة <i class="fa-solid fa-arrow-left"></i>
+                            <h1>الباقة <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                 المتوسط اليومي</h1>
                             <div class="list">
                                 <div>
                                     140جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     4.6 جيجا/يوم
                                 </div>
                                 <div>
                                     200جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     6.6 جيجا/يوم
                                 </div>
                                 <div>300جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     10 جيجا/يوم
                                 </div>
                                 <div>
                                     500جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     16.6 جيجا/يوم
                                 </div>
                                 <a href="hhttps://dsl.orange.eg/en/packages/Home-internet-packages"> <button
@@ -222,21 +236,21 @@
                     <div class="back">
                         <div class="quota-list" style="--tooltip-color: #00adef;">
                             <span class="company-name">Noor</span>
-                            <h1>الباقة <i class="fa-solid fa-arrow-left"></i>
+                            <h1>الباقة <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                 المتوسط اليومي</h1>
                             <div class="list">
                                 <div>
                                     200جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     6.6 جيجا/يوم
                                 </div>
                                 <div>
                                     300جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     10 جيجا/يوم
                                 </div>
                                 <div>500جيجا
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
                                     16.6 جيجا/يوم
                                 </div>
                                 <a href="https://adsl.noor.net/index.html">
@@ -249,19 +263,185 @@
             </div>
         </div>
     </div>
-    <footer>
-        <p>V0.7 - صنع و صمم بواسطة <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
-                target="_blank">3mr
-                5aled</a>
-        </p>
-        <div class="social-icons">
-
-            <a href="https://www.facebook.com/quotacalc/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://t.me/quotacalc"><i class="fa-brands fa-telegram"></i></a>
+    <div id="usages" class="usages">
+        <div class="quotalists3">
+            <div class="head">
+                <h2 class="center">نصائح</h2>
+            </div>
         </div>
-    </footer>
+        <div id="usagepermonth" class="usagespermonth">
+            <div id="overallusage" class="quota-list" style="--tooltip-color: #BD00FF;">
+                <h1 class="datatable">الاستخدام العام <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                    البيانات في اليوم</h1>
+                <div class="list">
+                    <div>
+                        خفيف
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        1GB+
+                    </div>
+                    <div>
+                        متوسط
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        6GB+
+                    </div>
+                    <div>
+                        عالي
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        20GB+
+                    </div>
+                    <div>
+                        عالي جدا
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        30GB+
+                    </div>
+                </div>
+            </div>
+
+            <div id="usagestats">
+                <p>
+                <h2>عينة 1 جيجا بيانات في اليوم:</h2>
+                <ul>
+                    <li> • 40 دقيقة يوميًا من تصفح الويب</li>
+                    <li> • أو 20 دقيقة يوميًا من تطبيقات الوسائط الاجتماعية</li>
+                    <li> • أو 22 ساعة في الشهر للصوتيات</li>
+                    <li> • أو 1-2 فيلم شهريًا (جودة منخفضة أو متوسطة)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 2GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• 80 دقيقة يوميًا من تصفح الويب</li>
+                    <li>• أو 40 دقيقة علي الأقل يوميًا من تطبيقات الوسائط الاجتماعية</li>
+                    <li>• أو 45 ساعة في الشهر للصوتيات</li>
+                    <li>• أو 3-4 دقيقة من التصفح يوميًا وبعض الأفلام كل شهر (جودة متوسطة)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 4GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• 3 ساعات يوميًا من تصفح الويب</li>
+                    <li>• أو 90 دقيقة على الأقل يوميًا من تطبيقات الوسائط الاجتماعية</li>
+                    <li>• أو 40 دقيقة من التصفح وساعتان من الصوتيات يومياً</li>
+                    <li>• أو 40 دقيقة من التصفح يوميًا وبعض الأفلام كل شهر (جودة متوسطة)</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 8GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• 6 ساعات يوميًا من تصفح الويب</li>
+                    <li>• أو 3 ساعات على الأقل يوميًا من تطبيقات الوسائط الاجتماعية</li>
+                    <li>• أو ما يكفي لبث 32 ساعة من الفيديو بجودة متوسطة</li>
+                    <li>• أو ما يكفي لمزيج من التصفح و الصوتيات والفيديو العرضي</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 20GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• ساعتان من الويب و 4 ساعات من الصوتيات و من ساعة إلى ساعتين من الفيديو يوميًا</li>
+                    <li>• لا يوجد خطر من نفاد البيانات إذا كنت تتصفح الويب فقط</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 50GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• 3 ساعات من الويب و 3 ساعات من الموسيقى و 2 من الأفلام المتدفقة متوسطة الجودة يوميًا</li>
+                </ul>
+                </p>
+
+                <p>
+                <h2>عينة 100GB نموذج بيانات في اليوم:</h2>
+                <ul>
+                    <li>• 30 ساعة من الفيديو عالي الجودة شهريًا</li>
+                    <li>• أو مزيج قوي من أنواع الاستخدام</li>
+                </ul>
+                </p>
+            </div>
+
+            <div id="activity" class="quota-list" style="--tooltip-color: #BD00FF;">
+
+                <h1 class="datatable">النشاط <i class="fa-solid fa-arrow-left animated faa-horizontal"></i> متوسط
+                    ​​استخدام البيانات (لكل ساعة)</h1>
+                <div id="biglist" class="list">
+                    <div>
+                        <i class="fa-solid fa-globe fa-bounce" style="color:blue;"></i>
+                        التصفح / وسائل التواصل الاجتماعي
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        20-120MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-message fa-bounce" style="color:rgb(255, 217, 0);"></i>
+                        الدردشة فورية
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        50MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope fa-bounce" style="color:red;"></i>
+                        البريد الإلكتروني
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        1-100MB (يعتمد علي الملفات المرفقة)
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-red fa-headphones fa-bounce" style="color:grey;"></i>
+                        الإستماع للصوتيات
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        45MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-video fa-bounce" style="color:cyan;"></i>
+                        بث الفيديو
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        250MB (يعتمد علي جودة الفيديو)
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad fa-bounce" style="color:purple;"></i>
+                        ألعاب على الانترنت
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        3-300MB
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone-volume fa-bounce" style="color:green;"></i>
+                        مكالمات الفيديو
+                        <i class="fa-solid fa-arrow-left animated faa-horizontal"></i>
+                        200-300MB
+                    </div>
+                </div>
+            </div>
+
+            <div id="tips">
+                <p>
+                <h2>نصائح لتوفير باقتك وأموالك 😎💵</h2>
+                <ul>
+                    <li> • تفعيل وضع توفير البيانات على جميع التطبيقات (إن وجد)</li>
+                    <li> • شاهد مقاطع الفيديو بدقة 240p (لمقاطع الفيديو العادية) أو 360p (لمقاطع الفيديو
+                        التعليمية والبرامج التعليمية)</li>
+                    <li> • إيقاف التنزيل التلقائي للصور ومقاطع الفيديو في جميع التطبيقات</li>
+                    <li> • إيقاف التحديثات التلقائية للتطبيقات والنظام</li>
+                </ul>
+                </p>
+
+                <span class="source">البحث من موقع <a href="https://3g.co.uk/guides/how-much-data-do-i-need">3G</a>
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <p>V0.7 - صنع و صمم بواسطة <a class=" footer-link" href="https://3mr5aled.netlify.com" rel="noopener"
+                    target="_blank">3mr5aled</a>
+            </p>
+            <div class="social-icons">
+                <a title="Facebook" rel="noopener" href="https://www.facebook.com/quotacalc/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a title="telegram" rel="noopener" href="https://t.me/quotacalc"><i
+                        class="fa-brands fa-telegram"></i></a>
+            </div>
+        </footer>
     </div>
-    <script src="src/script/script.js"></script>
+    <script src="../script/scroll-to-top.js"></script>
 </body>
 
 </html>

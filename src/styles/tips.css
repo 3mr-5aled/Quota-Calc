@@ -36,10 +36,12 @@
   flex-direction: column;
   align-items: center;
 }
-#overallusage {
+#overallusage,
+#activity {
   text-align: center;
 }
-#overallusage > .list > div {
+#overallusage > .list > div,
+#activity > .list > div {
   background-color: white;
   color: black;
   border: 5px solid #b800be;
@@ -99,20 +101,23 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-#usagestats {
+#usagestats,
+#tips {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .usages > p,
-#usagestats p {
+#usagestats p,
+#tips > p {
   background: rgba(0, 0, 0, 0.856);
   max-width: 50%;
   font-size: 1.8em;
 }
 .usages > h2,
-#usagestats > h2 {
+#usagestats > h2,
+#tips > h2 {
   background: white;
   color: black;
   padding: 15px;
@@ -121,8 +126,16 @@
   text-align: center;
 }
 .usages > ul,
-#usagestats ul {
+#usagestats ul,
+#tips > ul {
   max-width: 80%;
+}
+.datatable {
+  background-color: white;
+  color: black;
+  border-right: 5px solid var(--lightPurpleColor);
+  border-left: 5px solid var(--lightPurpleColor);
+  border-radius: 25px;
 }
 .source {
   background: black;
@@ -133,6 +146,27 @@
 .source > a {
   text-decoration: none;
   color: #b800be;
+}
+.quotalists {
+  background: #00000099;
+  width: 100vw;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+@media screen and (max-width: 680px) {
+  .quotalists {
+    padding-top: 2rem;
+  }
+}
+.quotalists2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 .quotalists3 {
   background: transparent;
@@ -214,7 +248,7 @@ h1 {
   width: 17rem;
 }
 #biglist {
-  width: 30rem !important;
+  width: 41rem !important;
 }
 @media screen and (max-width: 680px) {
   #biglist {

@@ -105,22 +105,7 @@ h1 {
     padding: 2rem;
   }
 }
-.quotalists {
-  background: #00000099;
-  width: 100vw;
-  padding-bottom: 2rem;
-  padding-top: 5rem;
-}
-.quotalists2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  gap: 2rem;
-}
+
 /* Left and right column */
 .column.left {
   display: flex;

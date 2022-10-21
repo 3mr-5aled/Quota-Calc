@@ -587,15 +587,15 @@
   "screenshots": [
     {
       "src": "assets/screenshots/desktop_screenshot_1.png",
-      "sizes": "3840x2160",
+      "sizes": "1234x595",
       "type": "image/png",
       "description": "A screenshot of the home page"
     },
     {
       "src": "assets/screenshots/desktop_screenshot_2.png",
-      "sizes": "3840x2160",
+      "sizes": "2160x1422",
       "type": "image/png",
-      "description": "A screenshot of  the companys calculated Quotas"
+      "description": "A screenshot of  the companies calculated Quotas"
     }
   ],
   "related_applications": [
@@ -612,6 +612,16 @@
       "icons": [
         {
           "src": "assets/icons/calculator.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Tips",
+      "url": "../src/pages/tips.html",
+      "icons": [
+        {
+          "src": "assets/icons/tips.png",
           "sizes": "192x192"
         }
       ]
