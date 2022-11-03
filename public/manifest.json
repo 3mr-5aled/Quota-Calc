@@ -21,7 +21,13 @@
       "src": "assets/icons/monochrome2.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any monochrome"
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/monochrome2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "monochrome"
     },
     {
       "src": "assets/icons/windows11/SmallTile.scale-100.png",
@@ -598,12 +604,7 @@
       "description": "A screenshot of  the companies calculated Quotas"
     }
   ],
-  "related_applications": [
-    {
-      "platform": "windows",
-      "url": " The URL to your app in that app store"
-    }
-  ],
+  "related_applications": [],
   "prefer_related_applications": false,
   "shortcuts": [
     {
@@ -611,30 +612,33 @@
       "url": "../index.html",
       "icons": [
         {
-          "src": "assets/icons/calculator.png",
-          "sizes": "192x192"
+          "src": "assets/icons/calculator.png"
         }
-      ]
+      ],
+      "description": "Calculator Homepage"
     },
     {
       "name": "Tips",
       "url": "../src/pages/tips.html",
       "icons": [
         {
-          "src": "assets/icons/tips.png",
-          "sizes": "192x192"
+          "src": "assets/icons/tips.png"
         }
-      ]
+      ],
+      "description": "Tips Page"
     },
     {
       "name": "Contact",
       "url": "../src/pages/contact.html",
       "icons": [
         {
-          "src": "assets/icons/telephone.png",
-          "sizes": "192x192"
+          "src": "assets/icons/telephone.png"
         }
-      ]
+      ],
+      "description": "Contact Page"
     }
-  ]
+  ],
+  "scope": "/",
+  "display_override": ["standalone"],
+  "categories": ["productivity", "utilities"]
 }
