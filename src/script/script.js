@@ -1,3 +1,5 @@
+//calculator
+
 var btnGet = document.getElementById("btc");
 var result = document.querySelector("h3");
 
@@ -30,8 +32,11 @@ btnGet.addEventListener("click", () => {
   num.innerHTML = average;
 
   // organizing displays
+  document.getElementById('firstCard').style.display = 'block';
   document.querySelector(".right").style.display = "none";
   document.getElementById("bth").style.display = "block";
+  document.querySelector(".left").style.marginTop = "7rem";
+  document.querySelector(".left").style.width = "97%";
   // document.getElementById("btc").style.display = "none";
   // document.querySelector(".left").style.order = "1";
 

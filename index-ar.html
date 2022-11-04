@@ -41,10 +41,11 @@
 
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/style-ar.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/main-ar.css">
     <!-- <link rel="stylesheet" href="src/styles/Quotas.css"> -->
-    <link rel="manifest" href="public/assets/manifest.json" />
+    <link rel="manifest" href="public/manifest.json" />
     <link rel="apple-touch-icon" href="public/assets/icons/ios/512.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -75,6 +76,8 @@
           }
         }
         </script>
+    <script>navigator.serviceWorker.register("sw.js")</script>
+
     <meta name="google-site-verification" content="DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU" />
 </head>
 
@@ -94,7 +97,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="mainDiv">
         <div class="calcBox">
-            <div class="column left">
+            <div id="firstCard" class="column left">
                 <h1>اهلا بكم في موقع حاسبة الباقة</h1>
                 <h2>
                     هيا بنا لنري متوسط استهلاكك الشهري
@@ -103,8 +106,10 @@
                 <h4>جيجا</h4>
                 <button type="button" id="bth" onClick="window.location.reload();">العودة للحاسبة</button>
             </div>
-            <div class="column right formStyle">
+            <div id="secondCard" class="column right formStyle">
                 <form>
+                    <h1 id="secondCardh1ar"></h1>
+                    <h2 id="secondCardh2ar"></h2>
                     <p>ادخل تواريخ الإشتراك</p>
                     <!-- today -->
                     <div>
@@ -142,6 +147,7 @@
             </div>
         </footer>
         <script src="src/script/script.js"></script>
+        <script src="src/script/cardarabic.js"></script>
 </body>
 
 </html>

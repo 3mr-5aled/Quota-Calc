@@ -36,7 +36,6 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/main.css">
@@ -93,7 +92,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <div class="mainDiv">
         <div class="calcBox">
-            <div class="column left">
+            <div id="firstCard" class="column left">
                 <h1>Welcome to Quota Calc</h1>
                 <h2>
                     Let's see what is the average use for you for the rest of the month
@@ -102,8 +101,10 @@
                 <h4>GB</h4>
                 <button type="button" id="bth" onClick="window.location.reload();">Back To calc</button>
             </div>
-            <div class="column right formStyle">
+            <div id="secondCard" class="column right formStyle">
                 <form>
+                    <h1 id="secondCardh1"></h1>
+                    <h2 id="secondCardh2"></h2>
                     <p>Enter the dates of your subscription</p>
                     <!-- today -->
                     <div>
@@ -141,6 +142,7 @@
             </div>
         </footer>
         <script src="src/script/script.js"></script>
+        <script src="src/script/cardenglish.js"></script>
 </body>
 
 </html>

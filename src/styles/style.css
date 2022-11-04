@@ -83,7 +83,7 @@ h1 {
     height: 100vh;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .calcBox {
     height: 100vh;
     display: flex;
@@ -98,11 +98,12 @@ h1 {
     margin-top: 2rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .calcBox {
     display: flex;
     flex-direction: column-reverse;
-    padding: 2rem;
+    padding-top: 3rem;
+    width: 20rem;
   }
 }
 
@@ -161,12 +162,14 @@ h1 {
   line-height: 25px;
   text-align: center;
   background-color: #00000099;
-  color: black;
+  color: white;
   border-radius: 25px;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-form > * {
+form > div,
+form > p,
+form > input {
   background: linear-gradient(
     45deg,
     var(--purpleColor),
@@ -176,6 +179,16 @@ form > * {
   padding: 10px;
   color: white;
 }
+#secondCardh1,
+#secondCardh2 {
+  color: white;
+}
+#secondCardh1ar,
+#secondCardh2ar {
+  color: white;
+  line-height: 2rem;
+}
+
 #num {
   font-size: 50px;
 }
