@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
 }
 .arabic {
-  z-index: 1000;
+  z-index: 28;
   position: fixed;
   top: 0;
   margin: 0.8rem;
@@ -86,7 +86,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 25;
 }
 /* Style the nav links */
 header a {
@@ -138,7 +138,7 @@ body > header > header > a:nth-child(1):hover {
   position: fixed;
   bottom: 3.3rem;
   right: 0.7rem;
-  z-index: 99;
+  z-index: 20;
   font-size: 18px;
   border: none;
   outline: none;

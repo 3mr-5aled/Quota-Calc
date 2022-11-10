@@ -82,6 +82,28 @@
 </head>
 
 <body>
+    <div class="pop-up">
+        <div class="card">
+            <button id="close">x</button>
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="switchTab(event, 'Video')" id="defaultOpen">الفيديو</button>
+                <button class="tablinks" onclick="switchTab(event, 'Text')">الكلام</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Video" class="tabcontent">
+                <h3>أهلا بك في حاسبة الباقة</h3>
+                <img src="public/assets/icons/quotaCalcBannerPreview.png" width="200px" height="100px" alt="">
+                <p>هذا الفيديو فيه شرح لكيفية استخدام التطبيق</p>
+            </div>
+
+            <div id="Text" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </div>
+    </div>
     <header>
         <a href="index-ar.html"> <img src="public/assets/icons/favicon.webp" alt="Logo" width="50px" height="50px"></a>
         <a href="src/pages/tips-ar.html" id="leftnav">نصائح</a>
@@ -104,12 +126,14 @@
                 </h2>
                 <h3 id="num">0</h3>
                 <h4>جيجا</h4>
+                <button type="button" id="btc2"> شاهد الدورة التعليمية </button>
                 <button type="button" id="bth" onClick="window.location.reload();">العودة للحاسبة</button>
             </div>
             <div id="secondCard" class="column right formStyle">
                 <form>
                     <h1 id="secondCardh1ar"></h1>
                     <h2 id="secondCardh2ar"></h2>
+                    <button type="button" id="btc3">شاهد الدورة التعليمية</button>
                     <p>ادخل تواريخ الإشتراك</p>
                     <!-- today -->
                     <div>
@@ -148,6 +172,9 @@
         </footer>
         <script src="src/script/script.js"></script>
         <script src="src/script/cardarabic.js"></script>
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
 </body>
 
 </html>

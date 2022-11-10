@@ -302,68 +302,76 @@
             </div>
 
             <div id="usagestats">
-                <p>
-                <h2>1GB data sample monthly usage:</h2>
-                <ul>
-                    <li> • 40 minutes daily of web browsing</li>
-                    <li> • Or 20 minutes daily of social media apps</li>
-                    <li> • Or 22 hours per month of music</li>
-                    <li> • Or 1-2 films per month (low or medium quality)</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>2GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 80 minutes of daily web browsing</li>
-                    <li>• Or at least 40 minutes of daily social media</li>
-                    <li>• Or 45 hours per month of music</li>
-                    <li>• Or 3-4 films per month (low or medium quality)</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>4GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 3 hours daily of web browsing</li>
-                    <li>• Or at least 90 minutes of daily social media</li>
-                    <li>• Or 40 mins of browsing and 2 hours of music daily</li>
-                    <li>• Or 40 mins of browsing daily and a few films each month (medium quality)</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>8GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 6 hours daily of web browsing</li>
-                    <li>• Or at least 3 hours daily of social media apps</li>
-                    <li>• Or enough to stream 32 hours of medium quality video</li>
-                    <li>• Or enough for a mix of browsing, music, and the occasional video</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>20GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 2 hours of web, 4 hours of music and 1-2 hours of video daily</li>
-                    <li>• No danger of running out of data if you're only web browsing</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>50GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 3 hours of web, 3 hours of music and 2 medium quality streamed films daily</li>
-                </ul>
-                </p>
-
-                <p>
-                <h2>100GB data sample monthly usage:</h2>
-                <ul>
-                    <li>• 30 hours of high-quality video per month</li>
-                    <li>• Or a robust mix of use types</li>
-                </ul>
-                </p>
+                <button class="accordion">1GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li> • 40 minutes daily of web browsing</li>
+                        <li> • Or 20 minutes daily of social media apps</li>
+                        <li> • Or 22 hours per month of music</li>
+                        <li> • Or 1-2 films per month (low or medium quality)</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">2GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 80 minutes of daily web browsing</li>
+                        <li>• Or at least 40 minutes of daily social media</li>
+                        <li>• Or 45 hours per month of music</li>
+                        <li>• Or 3-4 films per month (low or medium quality)</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">4GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 3 hours daily of web browsing</li>
+                        <li>• Or at least 90 minutes of daily social media</li>
+                        <li>• Or 40 mins of browsing and 2 hours of music daily</li>
+                        <li>• Or 40 mins of browsing daily and a few films each month (medium quality)</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">8GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 6 hours daily of web browsing</li>
+                        <li>• Or at least 3 hours daily of social media apps</li>
+                        <li>• Or enough to stream 32 hours of medium quality video</li>
+                        <li>• Or enough for a mix of browsing, music, and the occasional video</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">20GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 2 hours of web, 4 hours of music and 1-2 hours of video daily</li>
+                        <li>• No danger of running out of data if you're only web browsing</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">50GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 3 hours of web, 3 hours of music and 2 medium quality streamed films daily</li>
+                    </ul>
+                    </p>
+                </div>
+                <button class="accordion">100GB data sample monthly usage:</button>
+                <div class="panel">
+                    <p>
+                    <ul>
+                        <li>• 30 hours of high-quality video per month</li>
+                        <li>• Or a robust mix of use types</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
 
             <div id="activity" class="quota-list" style="--tooltip-color: #BD00FF;">
@@ -417,7 +425,7 @@
             </div>
 
             <div id="tips">
-                <p>
+                <!-- <p> -->
                 <h2>Tips for saving your quota and your money 😎💵</h2>
                 <ul>
                     <li> • turn on data saver on all apps (if exists)</li>
@@ -425,7 +433,7 @@
                     <li> • stop auto download photos and videos in all apps</li>
                     <li> • stop auto-updates for apps and system</li>
                 </ul>
-                </p>
+                <!-- </p> -->
 
                 <span class="source">Research from <a href="https://3g.co.uk/guides/how-much-data-do-i-need">3G</a>
                     website</span>
@@ -444,6 +452,7 @@
             </div>
         </footer>
     </div>
+    <script src="../script/accordion.js"></script>
     <script src="../script/scroll-to-top.js"></script>
 
 </body>
