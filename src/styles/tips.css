@@ -250,12 +250,12 @@
   perspective: 800px;
 }
 
-.container:hover > .card {
+.container:hover > .quotacard {
   cursor: pointer;
   transform: rotateY(180deg);
 }
 
-.card {
+.quotacard {
   height: 100%;
   width: 100%;
   position: relative;
