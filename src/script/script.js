@@ -32,8 +32,9 @@ btnGet.addEventListener("click", () => {
   num.innerHTML = average;
 
   // organizing displays
-  document.getElementById('firstCard').style.display = 'block';
+  document.getElementById('firstCard').style.display = 'flex';
   document.querySelector(".right").style.display = "none";
+  document.getElementById("btc2").style.display = "none";
   document.getElementById("bth").style.display = "block";
   document.querySelector(".left").style.margin = "7rem 0rem";
   document.querySelector(".left").style.width = "97%";
